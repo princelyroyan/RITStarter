@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>videos</title>
+  <entry>
+    <title>Rational Integration Tester 9 percben</title>
+    <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=oahM21JSbTI" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-04-23:4540cc60:14b0d191361:-7ff2</id>
+    <updated>2015-04-23T15:25:22Z</updated>
+    <media:thumbnail url="images/rit_in_9_mins.png" />
+  </entry>
+</feed>
+

@@ -1,0 +1,197 @@
+Manifest-Version: 1.0
+Archive-Content-Type: install
+Archive-Root: wlp/
+Bnd-LastModified: 1507866204859
+Bundle-Copyright: The Program materials contained in this file are IBM
+  copyright materials. WLP Copyright International Business Machines C
+ orp. 1999, 2017 All Rights Reserved * Licensed Materials - Property o
+ f IBM US Government Users Restricted Rights - Use, duplication or dis
+ closure restricted by GSA ADP Schedule Contract with IBM Corp.
+Bundle-Vendor: IBM
+Created-By: 1.8.0 (IBM Corporation)
+Extract-Installer: true
+IBM-Java-Options: -Xshareclasses:name=liberty-%u,nonfatal,cacheDirPerm
+ =1000 -XX:ShareClassesEnableBCI -Xscmx60m -Xscmaxaot8m -XX:+EnableHCR
+Import-Package: javax.xml.parsers,org.w3c.dom
+License-Agreement: wlp/lafiles/LA
+License-Information: wlp/lafiles/LI
+Main-Class: wlp.lib.extract.SelfExtract
+Map-Based-Self-Extractor: wlp.lib.extract.MapBasedSelfExtractor
+Provide-Feature: com.ibm.websphere.appserver.cdi-1.0; visibility:=publ
+ ic,com.ibm.websphere.appserver.appLifecycle-1.0; visibility:=protecte
+ d,com.ibm.ws.security.auth.data.common.nls-1.0; visibility:=private,c
+ om.ibm.ws.http.plugin.merge.nls-1.0; visibility:=private,com.ibm.ws.e
+ jbcontainer.jpa.nls-1.0; visibility:=private,com.ibm.websphere.appser
+ ver.concurrent-1.0; visibility:=public,com.ibm.websphere.appserver.au
+ toRestHandlerApiDiscovery-1.0; visibility:=protected,com.ibm.wsspi.ap
+ pserver.webBundleSecurity-1.0; visibility:=protected,com.ibm.ws.webco
+ ntainer.security.app.nls-1.0; visibility:=private,com.ibm.websphere.a
+ ppserver.javax.interceptor-1.1; visibility:=private,com.ibm.websphere
+ .appserver.appmanager-1.0; visibility:=protected,com.ibm.websphere.ap
+ pserver.autoSecurity-1.0; visibility:=private,com.ibm.websphere.appse
+ rver.jpaApiStub-2.0; visibility:=private,com.ibm.websphere.appserver.
+ builtinAuthentication-1.0; visibility:=private,com.ibm.ws.security.wi
+ m.adapter.ldap.nls-1.0; visibility:=private,com.ibm.websphere.appserv
+ er.ejbSecurity-1.0; visibility:=private,com.ibm.websphere.appserver.w
+ imcore-1.0; visibility:=private,com.ibm.tx.ltc.nls-1.0; visibility:=p
+ rivate,com.ibm.ws.artifact.zip.nls-1.0; visibility:=private,com.ibm.w
+ s.beanvalidation.nls-1.0; visibility:=private,com.ibm.ws.webserver.pl
+ ugin.runtime.nls-1.0; visibility:=private,com.ibm.websphere.appserver
+ .distributedMapPMI-1.0; visibility:=private,com.ibm.websphere.appserv
+ er.requestProbeJDBC-1.0; visibility:=private,com.ibm.ws.jca.cm.nls-1.
+ 0; visibility:=private,com.ibm.websphere.appserver.jpa2.0-bv1.0; visi
+ bility:=private,com.ibm.ws.security.registry.basic.nls-1.0; visibilit
+ y:=private,com.ibm.websphere.appserver.cdi1.0-jndi1.0; visibility:=pr
+ ivate,com.ibm.ws.security.ready.service.nls-1.0; visibility:=private,
+ com.ibm.ws.jndi.nls-1.0; visibility:=private,com.ibm.websphere.appser
+ ver.timedOperations-1.0; visibility:=public,com.ibm.websphere.appserv
+ er.javax.persistence-2.0; visibility:=private,com.ibm.websphere.appse
+ rver.dynamicBundle-1.0; visibility:=private,com.ibm.websphere.appserv
+ er.jpa-2.0; visibility:=public,com.ibm.websphere.appserver.autoReques
+ tProbeServlet-1.0; visibility:=private,com.ibm.ws.security.authentica
+ tion.tai.nls-1.0; visibility:=private,com.ibm.websphere.appserver.ejb
+ liteJPA-1.0; visibility:=private,com.ibm.websphere.appserver.servlet-
+ 3.0; visibility:=public,com.ibm.websphere.appserver.timedoperationsJd
+ bc-1.0; visibility:=private,com.ibm.websphere.appserver.transaction-1
+ .1; visibility:=protected,com.ibm.ws.security.authorization.builtin.n
+ ls-1.0; visibility:=private,com.ibm.websphere.appserver.blueprint-1.0
+ ; visibility:=public,com.ibm.websphere.appserver.ejbLiteCore-1.0; vis
+ ibility:=private,com.ibm.websphere.appserver.restConnectorjaxrs-1.0; 
+ visibility:=private,com.ibm.ws.security.quickstart.nls-1.0; visibilit
+ y:=private,com.ibm.ws.webcontainer.security.feature.nls-1.0; visibili
+ ty:=private,com.ibm.ws.app.manager.wab.nls-1.0; visibility:=private,c
+ om.ibm.websphere.appserver.webCache-1.0; visibility:=public,com.ibm.w
+ ebsphere.appserver.restConnector-1.0; visibility:=public,com.ibm.ws.s
+ ecurity.registry.nls-1.0; visibility:=private,com.ibm.websphere.appse
+ rver.cdi1.0-appSecurity1.0; visibility:=private,com.ibm.websphere.app
+ server.cdi1.0-beanvalidation1.0; visibility:=private,com.ibm.webspher
+ e.appserver.javax.connector.internal-1.6; visibility:=private,com.ibm
+ .websphere.appserver.jsp-2.2; visibility:=public,com.ibm.websphere.ap
+ pserver.javax.el-2.2; visibility:=private,com.ibm.websphere.appserver
+ .channelfw-1.0; visibility:=private,com.ibm.websphere.appserver.osgiA
+ pplication-1.0; visibility:=protected,com.ibm.websphere.appserver.int
+ ernal.jaxrs-1.1; visibility:=private,com.ibm.websphere.appserver.jsf-
+ 2.0; visibility:=public,com.ibm.ws.webcontainer.security.nls-1.0; vis
+ ibility:=private,com.ibm.websphere.appserver.federatedRegistry-1.0; v
+ isibility:=public,com.ibm.tx.jta.nls-1.0; visibility:=private,com.ibm
+ .websphere.appserver.classloaderContext-1.0; visibility:=protected,co
+ m.ibm.ws.security.wim.core.nls-1.0; visibility:=private,com.ibm.ws.se
+ curity.token.nls-1.0; visibility:=private,com.ibm.websphere.appserver
+ .managedBeansWar-1.0; visibility:=private,com.ibm.ws.classloader.cont
+ ext.nls-1.0; visibility:=private,com.ibm.ws.ejbcontainer.nls-1.0; vis
+ ibility:=private,com.ibm.websphere.appserver.httptransport-1.0; visib
+ ility:=private,com.ibm.websphere.appserver.connectionManagement-1.0; 
+ visibility:=private,com.ibm.websphere.appserver.jdbc-4.0; visibility:
+ =public,com.ibm.ws.security.appbnd.nls-1.0; visibility:=private,com.i
+ bm.websphere.appserver.transactionContext-1.0; visibility:=protected,
+ com.ibm.websphere.appserver.cdi1.0-servlet3.0; visibility:=private,co
+ m.ibm.websphere.appserver.jeeMetadataContext-1.0; visibility:=protect
+ ed,com.ibm.ws.transport.http.nls-1.0; visibility:=private,com.ibm.ws.
+ security.context.nls-1.0; visibility:=private,com.ibm.ws.security.nls
+ -1.0; visibility:=private,com.ibm.ws.webcontainer.cors.nls-1.0; visib
+ ility:=private,com.ibm.wsspi.appserver.webBundle-1.0; visibility:=pro
+ tected,com.ibm.ws.app.manager.war.nls-1.0; visibility:=private,com.ib
+ m.ws.channelfw.nls-1.0; visibility:=private,com.ibm.ws.management.sec
+ urity.nls-1.0; visibility:=private,com.ibm.websphere.appserver.javax.
+ jsp-2.2; visibility:=private,com.ibm.ws.rest.handler.nls-1.0; visibil
+ ity:=private,com.ibm.ws.concurrent.nls-1.0; visibility:=private,com.i
+ bm.ws.jmx.connector.client.rest.nls-1.0; visibility:=private,com.ibm.
+ ws.javaee.metadata.context.nls-1.0; visibility:=private,com.ibm.ws.ar
+ tifact.loose.nls-1.0; visibility:=private,com.ibm.websphere.appserver
+ .appSecurity-2.0; visibility:=public,com.ibm.websphere.appserver.cont
+ extService-1.0; visibility:=protected,com.ibm.websphere.appserver.was
+ welcomepage-1.0; visibility:=private,com.ibm.ws.session.nls-1.0; visi
+ bility:=private,com.ibm.ws.app.manager.module.nls-1.0; visibility:=pr
+ ivate,com.ibm.ws.app.manager.nls-1.0; visibility:=private,com.ibm.web
+ sphere.appserver.adminSecurity-1.0; visibility:=private,com.ibm.websp
+ here.appserver.ejbLite-3.1; visibility:=public,com.ibm.ws.filetransfe
+ r.nls-1.0; visibility:=private,com.ibm.websphere.appserver.jaxrs-1.1;
+  visibility:=public,com.ibm.ws.jsp.nls-1.0; visibility:=private,com.i
+ bm.websphere.appserver.internal.slf4j-1.7.7; visibility:=private,com.
+ ibm.ws.transaction.nls-1.0; visibility:=private,com.ibm.websphere.app
+ server.jcaSecurity-1.0; visibility:=private,com.ibm.websphere.appserv
+ er.jaxrsApiStub-1.1; visibility:=private,com.ibm.ws.recoverylog.nls-1
+ .0; visibility:=private,com.ibm.websphere.appserver.requestProbes-1.0
+ ; visibility:=private,com.ibm.ws.jdbc.nls-1.0; visibility:=private,co
+ m.ibm.websphere.appserver.injection-1.0; visibility:=private,com.ibm.
+ websphere.appserver.globalhandler-1.0; visibility:=private,com.ibm.ws
+ .security.token.ltpa.nls-1.0; visibility:=private,com.ibm.ws.containe
+ r.service.nls-1.0; visibility:=private,com.ibm.websphere.appserver.se
+ ssionMonitor-1.0; visibility:=private,com.ibm.ws.channel.ssl.nls-1.0;
+  visibility:=private,com.ibm.websphere.appserver.ssl-1.0; visibility:
+ =public,com.ibm.websphere.appserver.json-1.0; visibility:=public,com.
+ ibm.websphere.appserver.securityInfrastructure-1.0; visibility:=priva
+ te,com.ibm.websphere.appserver.ejbCore-1.0; visibility:=private,com.i
+ bm.websphere.appserver.oauth-2.0; visibility:=public,com.ibm.webspher
+ e.appserver.sessionDatabase-1.0; visibility:=public,com.ibm.websphere
+ .appserver.autoWebcontainerSecurity-1.0; visibility:=private,com.ibm.
+ websphere.appserver.beanValidation-1.0; visibility:=public,com.ibm.ws
+ .app.manager.ejb.nls-1.0; visibility:=private,com.ibm.ws.classloading
+ .configuration.nls-1.0; visibility:=private,com.ibm.websphere.appserv
+ er.javaeedd-1.0; visibility:=private,com.ibm.ws.security.authenticati
+ on.builtin.nls-1.0; visibility:=private,com.ibm.websphere.appserver.a
+ utoSecurityS4U2-1.0; visibility:=private,com.ibm.ws.monitor.nls-1.0; 
+ visibility:=private,com.ibm.websphere.appserver.restHandler-1.0; visi
+ bility:=protected,com.ibm.ws.ssl.nls-1.0; visibility:=private,com.ibm
+ .ws.request.probes.nls-1.0; visibility:=private,com.ibm.websphere.app
+ server.security-1.0; visibility:=private,com.ibm.websphere.appserver.
+ jaxrsEJB-1.1; visibility:=private,com.ibm.websphere.appserver.connect
+ ionpoolmonitor-1.0; visibility:=private,com.ibm.websphere.appserver.c
+ ontainerServices-1.0; visibility:=protected,com.ibm.ws.security.wim.r
+ egistry.nls-1.0; visibility:=private,com.ibm.websphere.appserver.anno
+ -1.0; visibility:=private,com.ibm.ws.security.java2sec.nls-1.0; visib
+ ility:=private,com.ibm.websphere.jsonsupport.nls-1.0; visibility:=pri
+ vate,com.ibm.websphere.appserver.classloading-1.0; visibility:=protec
+ ted,com.ibm.websphere.appserver.javax.servlet-3.0; visibility:=privat
+ e,com.ibm.ws.jpa.container.nls-1.0; visibility:=private,com.ibm.websp
+ here.appserver.ldapRegistry-3.0; visibility:=public,com.ibm.websphere
+ .security.wim.base.nls-1.0; visibility:=private,com.ibm.websphere.app
+ server.managedBeansCore-1.0; visibility:=private,com.ibm.websphere.ap
+ pserver.autoRestHandlerCollectivePlugins-1.0; visibility:=protected,c
+ om.ibm.websphere.appserver.cdi1.0-transaction1.1; visibility:=private
+ ,com.ibm.websphere.appserver.serverStatus-1.0; visibility:=public,com
+ .ibm.ws.security.jaas.common.nls-1.0; visibility:=private,com.ibm.web
+ sphere.appserver.webAppSecurity-1.0; visibility:=private,com.ibm.webs
+ phere.appserver.cdi1.0-ejblite3.1; visibility:=private,com.ibm.websph
+ ere.appserver.managedBeans-1.0; visibility:=public,com.ibm.websphere.
+ appserver.javax.annotation-1.1; visibility:=private,com.ibm.ws.contex
+ t.nls-1.0; visibility:=private,com.ibm.websphere.appserver.javax.cdi-
+ 1.0; visibility:=private,com.ibm.websphere.appserver.requestProbeServ
+ let-1.0; visibility:=private,com.ibm.websphere.appserver.localConnect
+ or-1.0; visibility:=public,com.ibm.ws.webcontainer.nls-1.0; visibilit
+ y:=private,com.ibm.websphere.appserver.wab-1.0; visibility:=public,co
+ m.ibm.websphere.appserver.jaxrsCDI-1.1; visibility:=private,com.ibm.w
+ ebsphere.appserver.basicRegistry-1.0; visibility:=private,com.ibm.ws.
+ security.common.nls-1.0; visibility:=private,com.ibm.websphere.appser
+ ver.builtinAuthorization-1.0; visibility:=private,com.ibm.ws.dynacach
+ e.nls-1.0; visibility:=private,com.ibm.websphere.appserver.javax.vali
+ dation-1.0; visibility:=private,com.ibm.websphere.appserver.javaeeCom
+ patible-6.0; visibility:=private,com.ibm.ws.javaee.ddmodel.nls-1.0; v
+ isibility:=private,com.ibm.ws.ejbcontainer.security.nls-1.0; visibili
+ ty:=private,com.ibm.websphere.appserver.ejbComponentMetadataDecorator
+ -1.0; visibility:=private,com.ibm.ws.jmx.connector.server.rest.nls-1.
+ 0; visibility:=private,com.ibm.websphere.appserver.jndi-1.0; visibili
+ ty:=public,com.ibm.websphere.appserver.osgi.jpa-1.0; visibility:=publ
+ ic,com.ibm.websphere.appserver.javaeePlatform-6.0; visibility:=privat
+ e,com.ibm.websphere.appserver.osgiConsole-1.0; visibility:=public,com
+ .ibm.websphere.appserver.appSecurity-1.0; visibility:=public,com.ibm.
+ websphere.appserver.distributedMap-1.0; visibility:=public,com.ibm.we
+ bsphere.appserver.cdi1.0-jsf2.0; visibility:=private,com.ibm.webspher
+ e.appserver.javax.ejb-3.1; visibility:=private,com.ibm.websphere.apps
+ erver.beanValidationCore-1.0; visibility:=private,com.ibm.websphere.a
+ ppserver.autoRequestProbeJDBC-1.0; visibility:=private,com.ibm.websph
+ ere.appserver.collectiveMember-1.0; visibility:=public,com.ibm.websph
+ ere.appserver.artifact-1.0; visibility:=private,com.ibm.websphere.app
+ server.httpcommons-1.0; visibility:=private,com.ibm.ws.injection.nls-
+ 1.0; visibility:=private,com.ibm.websphere.appserver.webProfile-6.0; 
+ visibility:=public,com.ibm.websphere.appserver.monitor-1.0; visibilit
+ y:=public,com.ibm.websphere.appserver.securityContext-1.0; visibility
+ :=protected,com.ibm.ws.classloading.nls-1.0; visibility:=private,com.
+ ibm.websphere.appserver.jta-1.1; visibility:=protected,com.ibm.ws.ann
+ o.nls-1.0; visibility:=private,com.ibm.ws.jndi.url.contexts.nls-1.0; 
+ visibility:=private,com.ibm.websphere.appserver.webcontainerMonitor-1
+ .0; visibility:=private,com.ibm.websphere.appserver.ltpa-1.0; visibil
+ ity:=private
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.3.0.201609221906
+XmxValue: 3000M

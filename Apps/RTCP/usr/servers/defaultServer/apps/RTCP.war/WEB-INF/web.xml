@@ -1,0 +1,411 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext.xml</param-value>
+		<!-- DO NOT include the Wink context here, as we do not want it applied 
+			to all web app (servlet) contexts -->
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Keep-Alive workaround to stop vie.comms creating lots of TIME_WAIT sockets-->
+	<filter>
+		<filter-name>JdkHttpKeepAlive</filter-name>
+		<filter-class>com.greenhat.server.container.server.HttpKeepAliveFilter</filter-class>
+		<init-param>
+			<param-name>user-agent-prefix</param-name>
+			<param-value>Java/</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>JdkHttpKeepAlive</filter-name>
+		<url-pattern>/rest/proxy/rulebase/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>JdkHttpKeepAlive</filter-name>
+		<url-pattern>/rest/container/logfeed.atom</url-pattern>
+	</filter-mapping>
+
+	<!-- Servlet filter -->
+	<filter>
+		<filter-name>rest-filter</filter-name>
+		<filter-class>com.greenhat.server.container.server.rest.RestFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>rest-filter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Caching filter -->
+	<filter>
+		<filter-name>cache-control</filter-name>
+		<filter-class>com.greenhat.server.container.server.CacheControlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>cache-control</filter-name>
+		<url-pattern>/container_web/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>cache-control</filter-name>
+		<url-pattern>/oslc_client/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Accept header filter -->
+	<filter>
+		<filter-name>InternetExplorerAcceptHeaderFilter</filter-name>
+		<filter-class>com.greenhat.server.container.server.rest.filters.InternetExplorerAcceptHeaderFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>InternetExplorerAcceptHeaderFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Character encoding filter -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Character encoding filter -->
+	<filter>
+		<filter-name>CharacterEncodingFilterExamples</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilterExamples</filter-name>
+		<url-pattern>/examples/*</url-pattern>
+	</filter-mapping>
+
+	<!-- WSDL content type filter -->
+	<filter>
+		<filter-name>wsdl-content-type</filter-name>
+		<filter-class>com.greenhat.server.container.server.WsdlContentTypeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>wsdl-content-type</filter-name>
+		<url-pattern>*.wsdl</url-pattern>
+	</filter-mapping>
+
+	<!-- Server startup filter -->
+	<filter>
+		<filter-name>server-startup</filter-name>
+		<filter-class>com.greenhat.server.container.server.ServerStartupFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>server-startup</filter-name>
+		<url-pattern>/container.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>server-startup</filter-name>
+		<url-pattern>/</url-pattern>
+	</filter-mapping>
+	
+	<!-- HTTP request performance monitoring (only covers endpoints not covered by the REST filter or GWT dispatchers) -->
+	<filter>
+		<filter-name>performance-monitor</filter-name>
+		<filter-class>
+			etm.contrib.integration.web.HttpRequestPerformanceFilter
+		</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>performance-monitor</filter-name>
+		<url-pattern>/auth/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>performance-monitor</filter-name>
+		<url-pattern>/discovery/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>performance-monitor</filter-name>
+		<url-pattern>/container/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>dispatch</servlet-name>
+		<servlet-class>com.greenhat.server.container.server.dispatch.DispatchServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatch</servlet-name>
+		<url-pattern>/container_web/dispatch</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dispatch</servlet-name>
+		<url-pattern>/oslc_client/dispatch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>exportActivityLog</servlet-name>
+		<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>exportActivityLog</servlet-name>
+		<url-pattern>/container/exportlog</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>exportDiagnosticLog</servlet-name>
+		<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>exportDiagnosticLog</servlet-name>
+		<url-pattern>/container/exportDiagnosticLog</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>rest</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>rest</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+ 
+	<servlet>
+		<servlet-name>agent</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>agent</servlet-name>
+		<url-pattern>/rest/agent/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>stubs</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>stubs</servlet-name>
+		<url-pattern>/rest/stubs/*</url-pattern>
+	</servlet-mapping>
+ 
+	<servlet>
+		<servlet-name>logging</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logging</servlet-name>
+		<url-pattern>/rest/logging/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>scenarios</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>scenarios</servlet-name>
+		<url-pattern>/rest/scenarios/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>proxy</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>proxy</servlet-name>
+		<url-pattern>/rest/proxy/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>vocab</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>vocab</servlet-name>
+		<url-pattern>/rest/vocab/*</url-pattern>
+	</servlet-mapping>
+ 
+	<servlet>
+		<servlet-name>container</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>container</servlet-name>
+		<url-pattern>/rest/container/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>tools</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>tools</servlet-name>
+		<url-pattern>/rest/tools/*</url-pattern>
+	</servlet-mapping>
+	
+
+	<!-- Authorization Servlet config -->
+	<servlet>
+		<servlet-name>auth</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>auth</servlet-name>
+		<url-pattern>/auth/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Discovery Servlet config -->
+	<servlet>
+		<servlet-name>discovery</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>discovery</servlet-name>
+		<url-pattern>/discovery/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Phonebook REST services config -->
+	<servlet>
+		<servlet-name>phonebook</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>phonebook</servlet-name>
+		<url-pattern>/examples/phonebook/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Calculator Example Servlet and config -->
+	<servlet>
+		<servlet-name>calculator-ws</servlet-name>
+		<servlet-class>com.greenhat.server.examples.server.ws.calculator.CalculatorWebService</servlet-class>
+		<init-param>
+			<param-name>wsdl</param-name>
+			<param-value>calculator.wsdl</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>calculator-ws</servlet-name>
+		<url-pattern>/examples/calculator/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Examples Servlet -->
+	<servlet>
+		<servlet-name>examples</servlet-name>
+		<servlet-class>com.greenhat.server.examples.server.main.ExamplesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>examples</servlet-name>
+		<url-pattern>/examples/*</url-pattern>
+		<url-pattern>/examples</url-pattern>
+	</servlet-mapping>
+
+	<!-- Echo Example Servlet and config -->
+	<servlet>
+		<servlet-name>echo-ws</servlet-name>
+		<servlet-class>com.greenhat.server.examples.server.ws.echo.EchoWebService</servlet-class>
+		<init-param>
+			<param-name>wsdl</param-name>
+			<param-value>echo.wsdl</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>echo-ws</servlet-name>
+		<url-pattern>/examples/echo/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Login Example Servlet and config -->
+	<servlet>
+		<servlet-name>login-ws</servlet-name>
+		<servlet-class>com.greenhat.server.examples.server.ws.login.LoginWebService</servlet-class>
+		<init-param>
+			<param-name>wsdl</param-name>
+			<param-value>login.wsdl</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login-ws</servlet-name>
+		<url-pattern>/examples/login/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>container.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<!-- JETM performance monitoring -->
+	
+	<servlet>
+		<servlet-name>performanceMonitor</servlet-name>
+		<servlet-class>etm.contrib.integration.web.HttpConsoleServlet</servlet-class>
+		<init-param>
+			<param-name>expanded</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>performanceMonitor</servlet-name>
+		<url-pattern>/performance/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>

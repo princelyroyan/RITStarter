@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>构建</title>
+  <entry>
+    <title>构建</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffe</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.createtestfrommessage" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>从模板构建测试以减少更改的影响</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>构建</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="rules" scheme="http://ibm.co/rit/home/feeds/groupings/sequence" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffd</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.rulecache.validation" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>复用验证规则</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>构建</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffa</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runtest" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>重复操作的序列</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>执行</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff9</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runmanytests" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>通过一次单击运行许多测试</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>结果</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff8</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.tests.savingresults" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>保存我的测试结果以在稍后查看</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+</feed>
+

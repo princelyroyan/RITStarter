@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registration>
+	<!-- Connection details to the server instance that this proxy will register with -->
+	<server base-url="https://localhost:5443/RTCP" />
+     <!-- By default this proxy will trust all certificates presented by the server -->
+	   <ssl trustAll="true"/>
+	   <!--
+	     Replace the ssl element above with the example below for greater control over
+	     the trust store and ssl protocol used
+	   -->
+       <!--
+  	     <ssl
+           trustStore="greenhatTrusted.jks"
+  		   trustStorePassword="passphrase"
+  		   trustStoreType="jks"
+  		   protocol="SSL_TLSv2, TLS" />
+       -->
+	<!-- Activity logging level to present to the server instance -->
+	<logger level="info"/>
+
+	<!--
+		The optional identifier names can be used to help identify an instance of the http or tcp proxy.
+		The names will be displayed in the server.
+	-->
+	<!--
+	<identifier http-name="identifier" tcp-name="identifier2" />
+	-->
+
+	<!-- HTTP proxy settings where: -->
+	<!--   port                Port number, client applications must be configured to use this -->
+	<!--   bind-address        NIC to bind to, blank for all -->
+	<!--   proxy/host          Onward proxy server host to chain requests through -->
+	<!--   proxy/port          Onward proxy server port to chain requests through -->
+	<!--   proxy/username      Onward proxy authorization username -->
+	<!--   proxy/password      Onward proxy authorization password -->
+	<!--   proxy/filter        Onward proxy host filter.
+	                           Requests sent to hostnames matching the filter will be routed through
+	                           the onward proxy. For example:
+	                           *.myCompany.com|*.myOtherCompany.com|~myBadHost.myCompany.com -->
+	<!-- proxy/useWhenStubbing Controls whether or not requests that will be sent to a stub will
+	                           be sent through the onward proxy. Set to "true" to force it to send
+	                           requests to a stub via the onward proxy. Defaults to false. -->
+	<http-proxy port="3128"	bind-address="localhost" disableConnectForwarding="false">
+	   <!-- proxy host="localhost" port="7128" useWhenStubbing="false"/ -->
+	</http-proxy>
+
+	<!--HTTPS proxy settings where: -->
+	<!--   port                      Port number, client applications must be configured to use this -->
+	<!--   bind-address              NIC to bind to, blank for all -->
+	<!--   keyStoreFile              File containing public and private keys used to accept client connections -->
+	<!--   keyStoreAlias             Alias of KeyStore entry -->
+	<!--   keyStoreType              KeyStore type -->
+	<!--   keyStorePassword          KeyStore password -->
+	<!--   signingAlgorithm          Algorithm used to sign generated certificates -->
+	<!--   serverProtocol            The SSL protocol that the secure server socket will listen using -->
+	<!--   clientProtocol            The SSL protocol that the onward secure connection will use -->
+	<!--                             These two options are comma delimited lists that will be checked for -->
+	<!--                             availability. SSL_TLS is supported by the IBM JRE and if unavailable the -->
+	<!--                             next one will be tried. -->
+	<!--                             platforms then this may need to be changed to TLS or SSL -->
+	<!--   plainCommsPort            The port used to handle plain text to SSL communications -->
+	<!--   outboundKeyStoreFile      File containing public and private keys used by the proxy to identify -->
+	<!--                             itself during mutual authentication -->
+	<!--   outboundKeyStorePassword  Password to access the keystore used during mutual authentication -->
+	<!--   proxy/host                Onward proxy server host to chain requests through -->
+	<!--   proxy/port                Onward proxy server port to chain requests through -->
+	<!--   proxy/username            Onward proxy authorization username -->
+	<!--   proxy/password            Onward proxy authorization password -->
+	<!--   proxy/filter              Onward proxy host filter.
+	                                 Requests sent to hostnames matching the filter will be routed through
+	                                 the onward proxy. For example:
+	                                 *.myCompany.com|*.myOtherCompany.com|~myBadHost.myCompany.com -->
+	<!-- proxy/useWhenStubbing       Controls whether or not requests that will be sent to a stub will
+	                                 be sent through the onward proxy. Set to "true" to force it to send
+	                                 requests to a stub via the onward proxy. Defaults to false. -->
+	<https-proxy
+		port="3129"	bind-address="localhost" serverProtocol="SSL_TLS, TLS"
+		keyStoreFile="greenhat.jks" keyStoreType="jks"
+		keyStoreAlias="mykey" keyStorePassword="passphrase"
+		signingAlgorithm="SHA1withRSA"
+		plainCommsPort="3131"  clientProtocol="SSL_TLS, TLS"
+		outboundKeyStoreFile="greenhat.jks"
+		outboundKeyStorePassword="passphrase">
+			<!-- proxy host="localhost" port="7128" useWhenStubbing="false"/ -->
+	</https-proxy>
+
+	<!--
+		If the HTTP proxy receives a request addressed to itself, it will respond with 403 - Forbidden,
+		rather than forwarding the request on to itself and creating an infinite loop.
+		This situation is typically the result of a client being misconfigured to use the proxy
+		as an endpoint rather than a proxy.
+
+		Note that this protection against looping is not foolproof as it can be broken by creating
+		a TCP type forwarding rule with the HTTP proxy as a destination and then configuring a client
+		to use the bind address of the rule as an endpoint.
+
+		As requests are then addressed to the proxy indirectly, it fails to recognise this
+		and creates a loop by forwarding the request on via the forwarding rule again.
+	-->
+
+	<!-- TCP Forwarding Rules -->
+	<!-- The list of base port forwarding rules, the proxy will listen on the address
+		specified by the bind attribute and by default will forward traffic on to the
+		destination address.  The type attribute indicates how the contents should be
+		treated in order to make recording and routing decisions. The types available are:
+		"http"          - HTTP connection
+		"mqtt"          - MQTT connection
+		"https","mqtts" - HTTP/MQTT based connection secured with SSL/TLS
+		                  These types will use the SSL settings from the https-proxy
+		                  configuration element above.
+		Connection control can be managed using the "disconnect" attribute whose value
+		is one of "none", "live", "stub", "either", this will affect per message based
+		types and indicates when the client connection should be closed in relation to
+		the closure of its peer.
+	-->
+
+	<!--
+		The following example forwarding rules demonstrate the use of different bind addresses.
+
+		IP address -	binds to the specified adapter.
+		0.0.0.0 -		binds to all addresses/adapters on the machine and is useful if you don't know
+		   				the specific hostname/IP that the machine is actually listening on
+		localhost -		only allows connections FROM the local machine and should only be used in that case
+	 -->
+	<!--
+	<forward bind="192.168.10.10:8080" destination="example.com:8080" type="http" />
+	<forward bind="0.0.0.0:1883" destination="example.com:2883" type="mqtt" />
+	<forward bind="localhost:1884" destination="example.com:1884" type="mqtts" disconnect="live" />
+	-->
+
+	<!-- A proxy does not need to register against a domain or environment.
+		By default it will proxy for all domains/environments. If you want to restrict
+		its use then add <domain> entries based on the example below. Each domain
+		may have 0 or more environments -->
+    <!--
+	  <domains>
+		  <domain name="testDomain">
+			  <environment name="testEnvironment" />
+		  </domain>
+	  </domains>
+    -->
+
+    <discovery>
+  		<!--
+		    When the proxies are observing resources, they report the observations in batches. By default
+		    the frequency of reporting is every 10 seconds. The frequency can be changed by altering the
+		    value below. The minimum allowed frequency is 5, the maximum is 30.
+	 	-->
+		<reporting frequency="10" />
+
+  		<!--
+		    When the proxies register with the server, they can gather usage statistics
+		    immediately. If statistics will not be required, the initial state can be set to "off".
+	 	-->
+		<statistics http-initial-state="on" tcp-initial-state="on" />
+
+		<!--
+		    When the HTTP proxy is observing resources, it can ignore resources based on the file extension
+		    specified in the observed URL. The extensions to ignore can be configured using a set of one or
+		    more regular expressions. If URLs do not contain file extensions they are included in the observed
+		    resources.
+		-->
+		<observed-resources>
+		    <exclude extension="htm.?" />
+	    	<exclude extension="css" />
+	    	<exclude extension="js.?" />
+	    	<exclude extension="jpg|gif|png" />
+		</observed-resources>
+	</discovery>
+
+</registration>

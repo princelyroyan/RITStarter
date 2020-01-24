@@ -1,0 +1,255 @@
+/** 
+ * CUSTOM STYLES FOR INHERITED MODULES ***ONLY*** IN HERE (e.g. GWT Slider Bar).
+ * 
+ * Declare custom style names in the appropriate style CssResource and .css file in your project.
+ * For any CSS that needs GWT-specific rules, create a new CssResource in this project.
+ */
+html,body {
+    height: 100% !important;
+    margin: 0;
+}
+
+.gwt-TextBox, .gwt-PasswordTextBox {
+	padding: 2px;
+	border: default;
+	font-family: Arial Unicode MS,Arial,sans-serif;
+	font-size: 100%;
+}
+
+/*
+ * Dialogs & other pop-ups
+ */
+
+.gwt-DialogBox .dialogTopLeftInner, .gwt-DialogBox .dialogBottomLeftInner,
+.gwt-DialogBox .dialogTopRightInner, .gwt-DialogBox .dialogBottomRightInner {
+	width: 5px;
+}
+
+.gwt-DialogBox .dialogBottomLeftInner, .gwt-DialogBox .dialogBottomRightInner {
+	height: 5px;
+}
+
+.gwt-DialogBox .dialogTopRight {
+	background-position: -33px 0;
+}
+
+.gwt-DialogBox .dialogMiddleRight {
+	background-position: -37px 0;
+}
+
+.gwt-DialogBox .dialogBottomRight {
+	background-position: -13px -41px;
+}
+
+.gwt-DialogBox .dialogBottomCenter {
+	background-position: 0 -2950px;
+}
+
+.gwt-DialogBox .dialogBottomLeft {
+	background-position: 0 -41px;
+}
+
+/*
+ * Split layout panel
+ */
+
+.gwt-SplitLayoutPanel-VDragger {
+	background-color: white !important;
+	border-top: 1px solid black;
+}
+
+.gwt-SplitLayoutPanel-HDragger {
+    background-color: white !important;
+    border-right: 1px solid silver;
+}
+
+/*
+ * Buttons
+ * (See also container's CssResource for browser-specific styles)
+ */
+.gwt-Button {
+  border: 1px solid #a0a0a0;
+  background: #E5EBF8 url(../clean/images/hborder.png) repeat-x 0px -989px;
+  /* padding: see container.client's Style.css */
+}
+.gwt-Button:active {
+ border: 1px solid #a0a0a0;
+}
+.gwt-Button:hover {
+ border: 1px solid #a0a0a0;
+}
+.gwt-Button[disabled] {
+ border: 1px solid #BBB;
+ opacity: 0.5;
+ filter: alpha(opacity=40);
+}
+.gwt-Button[disabled]:hover {
+ border: 1px solid #BBB;
+}
+
+
+/*
+ * Toggle buttons
+ */
+
+.gwt-ToggleButton-up,
+.gwt-ToggleButton-up-hovering,
+.gwt-ToggleButton-up-disabled,
+.gwt-ToggleButton-down,
+.gwt-ToggleButton-down-hovering,
+.gwt-ToggleButton-down-disabled {
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+}
+.gwt-ToggleButton-up,
+.gwt-ToggleButton-up-hovering,
+.gwt-ToggleButton-up-disabled {
+  padding: 3px 10px;
+  background: #F0F0F0;
+}
+.gwt-ToggleButton-up {
+  background: #E5EBF8 url(../clean/images/hborder.png) repeat-x 0px -989px;
+}
+.gwt-ToggleButton-up-hovering {
+  background: #E5EBF8 url(../clean/images/hborder.png) repeat-x 0px -989px;
+}
+.gwt-ToggleButton-up-disabled {
+  border-color: #BBB;
+}
+.gwt-ToggleButton-down,
+.gwt-ToggleButton-down-hovering,
+.gwt-ToggleButton-down-disabled {
+  border: 1px inset #e4eee1;
+  padding: 4px 9px 2px 11px;
+}
+.gwt-ToggleButton-down {
+	background: url("../clean/images/hborder.png") repeat-x scroll 0 -1448px #B3D4F5;
+}
+.gwt-ToggleButton-down-hovering {
+	background: url("../clean/images/hborder.png") repeat-x scroll 0 -1448px #B3D4F5;
+}
+.gwt-ToggleButton-down-disabled {
+}
+
+.gwt-CheckBox input:focus {
+	outline: 1px dotted black;
+}
+
+/**
+ * Stack panel (accordion) styles
+ */
+
+.gwt-StackLayoutPanel {
+  border-bottom: 1px solid #bbbbbb;
+}
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader {
+  font-size: inherit;
+}
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader:focus {
+    border-color: black;
+    border-style: dotted;
+    border-width: 1px;
+}
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader-hovering {
+}
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelContent {
+  padding: 2px 2px 10px 2px;
+}
+
+/** 
+ * Slider bar styles 
+ */
+.gwt-SliderBar-shell {
+    height: 21pt;
+    width: 50%;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-line {
+    border: 1px solid black;
+    background-color: white;
+    height: 4px;
+    width: 95%;
+    top: 18pt;
+    overflow: hidden;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-knob {
+    top: 8pt;
+    width: 11px;
+    height: 18px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-tick {
+    top: 12pt;
+    width: 1px;
+    height: 7pt;
+    background: black;
+    overflow: hidden;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-label {
+    top: 2pt;
+    font-size: 7pt;
+    cursor: default;
+}
+
+.gwt-SliderBar-shell-focused {
+    
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-line-sliding {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+/*
+  TabLayoutPanel styles
+*/
+
+.gwt-TabLayoutPanelTab {
+    background: none repeat scroll 0 0 #629300;
+    color: black;
+    cursor: pointer;
+    margin-left: 6px;
+    padding: 3px 6px;
+    text-align: center;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+	background-color: #eee;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+    position: relative;
+    top: 1px;
+    border-style: solid;
+    border-color: #8E8E8E;
+    border-width: 1px 1px 0;
+    background-color: white;
+    color: black;
+}
+	
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+    cursor: default;
+    font-weight: normal;
+    background-color: #8E8E8E;
+    color: white;
+}
+
+.gwt-TabLayoutPanelTab-disabled {
+    color: #999999;
+    cursor: default;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContentContainer {
+    border-color: #8E8E8E;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px 3px 0 0;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+    overflow: hidden;
+}

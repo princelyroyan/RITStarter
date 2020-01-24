@@ -1,0 +1,10 @@
+// NLS_CHARSET=UTF-8
+{
+  "name": "%JDBCIntercept_name%",
+  "version": "9.5.0.0",
+  "description": "%JDBCIntercept_description%",
+  "link": {
+    "text": "%JDBCIntercept_linkText%",
+    "url": "http://www.ibm.com/support/knowledgecenter/SSBLQQ_9.5.0/com.ibm.rational.rtvs.ref.doc/topics/c_rtvs_db_stubs_jdbc_proxy.html"
+  }
+}

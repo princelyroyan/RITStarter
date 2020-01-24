@@ -1,0 +1,56 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            8d:3e:52:6d:12:0a:8b:e9
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=Integration Tester Root CA
+        Validity
+            Not Before: May 26 13:10:29 2017 GMT
+            Not After : May 24 13:10:29 2027 GMT
+        Subject: CN=Integration Tester Root CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:ea:2b:16:58:47:20:4c:b8:3d:5b:13:ba:6c:7f:
+                    f6:c9:10:41:eb:d9:00:5e:15:4a:d9:bf:58:15:c8:
+                    b4:2e:e3:a6:a4:68:ad:8d:10:17:81:15:97:96:73:
+                    64:94:90:f9:04:08:52:4b:7f:91:4e:73:b6:06:c8:
+                    b2:d8:ee:34:ee:1b:bd:52:e2:9e:07:f8:4f:a4:58:
+                    66:61:f8:73:7b:e4:3b:c1:68:55:b2:39:ed:04:26:
+                    6f:8f:3e:8a:e5:58:28:68:72:25:ab:66:19:6b:06:
+                    d0:35:da:03:b3:39:c0:30:f1:26:f3:2f:69:6c:3b:
+                    13:f3:48:17:b8:cf:6c:96:b1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                EF:AD:BD:74:A5:17:80:83:18:4F:8C:47:4A:36:90:E8:9B:95:ED:5E
+            X509v3 Authority Key Identifier: 
+                keyid:EF:AD:BD:74:A5:17:80:83:18:4F:8C:47:4A:36:90:E8:9B:95:ED:5E
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha256WithRSAEncryption
+         79:87:04:56:41:84:64:b6:7c:43:b4:c6:dc:a8:33:d6:1a:4e:
+         66:a1:e1:4c:d0:bc:0e:d9:1e:25:1d:91:eb:84:3f:fe:69:20:
+         5e:1b:76:f4:f3:04:04:98:13:88:fe:56:4d:cc:44:d1:3e:42:
+         23:d3:bf:1d:92:3f:21:26:b7:50:62:4a:8e:ce:37:88:64:5a:
+         22:f7:1a:81:c6:d7:69:6c:17:3b:1c:cc:ba:02:74:51:ef:7e:
+         96:6d:fe:d2:41:a4:c3:31:5d:15:f0:4c:23:b9:1b:bc:35:34:
+         74:5c:b9:aa:34:eb:93:5b:ab:55:f6:c3:be:a3:e0:c3:8f:85:
+         c3:08
+-----BEGIN CERTIFICATE-----
+MIICGDCCAYGgAwIBAgIJAI0+Um0SCovpMA0GCSqGSIb3DQEBCwUAMCUxIzAhBgNV
+BAMMGkludGVncmF0aW9uIFRlc3RlciBSb290IENBMB4XDTE3MDUyNjEzMTAyOVoX
+DTI3MDUyNDEzMTAyOVowJTEjMCEGA1UEAwwaSW50ZWdyYXRpb24gVGVzdGVyIFJv
+b3QgQ0EwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOorFlhHIEy4PVsTumx/
+9skQQevZAF4VStm/WBXItC7jpqRorY0QF4EVl5ZzZJSQ+QQIUkt/kU5ztgbIstju
+NO4bvVLingf4T6RYZmH4c3vkO8FoVbI57QQmb48+iuVYKGhyJatmGWsG0DXaA7M5
+wDDxJvMvaWw7E/NIF7jPbJaxAgMBAAGjUDBOMB0GA1UdDgQWBBTvrb10pReAgxhP
+jEdKNpDom5XtXjAfBgNVHSMEGDAWgBTvrb10pReAgxhPjEdKNpDom5XtXjAMBgNV
+HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAHmHBFZBhGS2fEO0xtyoM9YaTmah
+4UzQvA7ZHiUdkeuEP/5pIF4bdvTzBASYE4j+Vk3MRNE+QiPTvx2SPyEmt1BiSo7O
+N4hkWiL3GoHG12lsFzsczLoCdFHvfpZt/tJBpMMxXRXwTCO5G7w1NHRcuao065Nb
+q1X2w76j4MOPhcMI
+-----END CERTIFICATE-----

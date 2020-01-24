@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: XOM
+Bundle-SymbolicName: nu.xom
+Bundle-Version: 1.0.0
+Bundle-ClassPath: xom-1.1.jar
+Bundle-Vendor: xom.nu
+Bundle-RequiredExecutionEnvironment: J2SE-1.2
+Export-Package: nu.xom, nu.xom.canonical, nu.xom.converters, nu.xom.xi
+ nclude, nu.xom.xslt
+Import-Package: com.sun.org.apache.xerces.internal.jaxp;resolution:=optional,
+ com.sun.org.apache.xerces.internal.parsers;resolution:=optional,
+ javax.xml.transform,
+ javax.xml.transform.sax,
+ junit.framework;version="3.8.1";resolution:=optional,
+ org.w3c.dom,
+ org.xml.sax,
+ org.xml.sax.ext,
+ org.xml.sax.helpers
+Require-Bundle: org.apache.xerces;resolution:=optional

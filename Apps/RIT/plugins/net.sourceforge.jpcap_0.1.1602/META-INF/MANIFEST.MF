@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jpcap
+Bundle-SymbolicName: net.sourceforge.jpcap
+Bundle-Version: 0.1.1602
+Bundle-ClassPath: net.sourceforge.jpcap-0.01.16.jar
+Bundle-Vendor: sourceforge.net
+Export-Package: net.sourceforge.jpcap.capture,
+ net.sourceforge.jpcap.client,
+ net.sourceforge.jpcap.net,
+ net.sourceforge.jpcap.simulator,
+ net.sourceforge.jpcap.tutorial.example1,
+ net.sourceforge.jpcap.tutorial.example15,
+ net.sourceforge.jpcap.tutorial.example2,
+ net.sourceforge.jpcap.tutorial.example3,
+ net.sourceforge.jpcap.tutorial.example4,
+ net.sourceforge.jpcap.tutorial.example5,
+ net.sourceforge.jpcap.tutorial.example6,
+ net.sourceforge.jpcap.tutorial.example7,
+ net.sourceforge.jpcap.tutorial.misc,
+ net.sourceforge.jpcap.tutorial.sniffer,
+ net.sourceforge.jpcap.util 
+Bundle-NativeCode: win32/x86/jpcap.dll; osname=win32; osname="Windows 10"; osname="Windows Server 2012 R2"; processor=x86,
+ win32/x86_64/jpcap.dll; osname=win32; osname="Windows 10"; osname="Windows Server 2012 R2"; processor=x86_64,
+ solaris/sparc/libjpcap.so; osname=solaris; osname=SunOS; processor=sparc,
+ linux/x86/libjpcap.so; osname=linux; processor=x86,
+ linux/x86_64/libjpcap.so; osname=linux; processor=x86_64,
+ aix/ppc/libjpcap.so; osname=aix; processor=ppc,
+ *

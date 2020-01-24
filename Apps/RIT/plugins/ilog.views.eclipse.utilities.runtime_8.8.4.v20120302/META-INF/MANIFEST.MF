@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: ilog.views.eclipse.utilities.runtime
+Eclipse-LazyStart: true
+Require-Bundle: org.eclipse.core.runtime,com.ibm.icu
+Bundle-Version: 8.8.4.v20120302
+Export-Package: ilog.jlm,ilog.views.util,ilog.views.util.base64,ilog.v
+ iews.util.beans,ilog.views.util.beans.editor,ilog.views.util.collecti
+ ons,ilog.views.util.collections.internal,ilog.views.util.convert,ilog
+ .views.util.data,ilog.views.util.event,ilog.views.util.filter,ilog.vi
+ ews.util.filter.event,ilog.views.util.image,ilog.views.util.internal,
+ ilog.views.util.java2d,ilog.views.util.java2d.internal,ilog.views.uti
+ l.psheet,ilog.views.util.psheet.resources,ilog.views.util.styling.run
+ time,ilog.views.util.styling.runtime.internal,ilog.views.util.swing,i
+ log.views.util.swing.border,ilog.views.util.swing.calendar,ilog.views
+ .util.swing.calendar.event,ilog.views.util.swing.calendar.plaf,ilog.v
+ iews.util.swing.calendar.resources,ilog.views.util.swing.color,ilog.v
+ iews.util.swing.color.resources,ilog.views.util.swing.context,ilog.vi
+ ews.util.swing.date,ilog.views.util.swing.font,ilog.views.util.swing.
+ font.resources,ilog.views.util.swing.internal,ilog.views.util.swing.l
+ ayout,ilog.views.util.swing.table,ilog.views.util.swing.tree,ilog.vie
+ ws.util.swing.validation,ilog.views.util.text,ilog.views.util.text.in
+ ternal,ilog.views.util.time,ilog.views.util.waitcursor,ilog.views.uti
+ l.xml
+Bundle-ClassPath: lib/eclipse-utilities-runtime.jar
+Bundle-Vendor: IBM
+Bundle-ActivationPolicy: lazy
+Bundle-Name: IBM ILOG JViews Base Utilities Runtime for Eclipse
+Eclipse-ExtensibleAPI: true
+Bundle-ManifestVersion: 2
+
+Name: lib/eclipse-utilities-runtime.jar
+SHA1-Digest: dDSrRZUIJ2j/+GXkRrNPieBmH5M=
+
+Name: license.html
+SHA1-Digest: F0LT6RIJL/GwsXUKLV8B8GURyOg=
+
+Name: about.html
+SHA1-Digest: ZxeDM+Fu8IuUyKdXsyoRxDYz6nk=
+

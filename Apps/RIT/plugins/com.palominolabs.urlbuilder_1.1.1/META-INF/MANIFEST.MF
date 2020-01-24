@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: URL Builder
+Bundle-SymbolicName: com.palominolabs.urlbuilder
+Bundle-Version: 1.1.1
+Bundle-Vendor: Palomino Labs
+Bundle-ClassPath: url-builder-1.1.0.jar
+Export-Package: com.palominolabs.http.url
+Require-Bundle: com.google.guava
+Import-Package: org.apache.commons.lang3.tuple

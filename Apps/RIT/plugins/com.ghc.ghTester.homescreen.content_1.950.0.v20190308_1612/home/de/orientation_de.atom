@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>Orientierung</title>
+  <entry>
+    <title>Erste Schritte</title>
+    <link rel="alternate" href="https://developer.ibm.com/testing/docs/getting-started-rational-integration-tester-starter-edition/" />
+    <category term="wide_text" scheme="http://ibm.co/rit/home/feeds/tileType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2016-02-09:4540cc60:14b0d191360:-7fc0</id>
+    <updated>2016-02-09T15:25:22Z</updated>
+    <summary>Schrittweisen Anleitungen folgen, um das Erstellen von Tests und Stubs mittels Swagger oder Aufzeichnung schnell zu erlernen</summary>
+    <rit:condition>!product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>Orientierung</title>
+    <link rel="alternate" href="orientation/Orientation.html" />
+    <category term="wide" scheme="http://ibm.co/rit/home/feeds/tileType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fc1</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <summary>Einladung zu einer kurzen Tour durch Rational Integration Tester</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/orientation.png" />
+  </entry>
+</feed>
+

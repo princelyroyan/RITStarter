@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    1/24/20 10:02:49:816 CAT    1/24/20 10:02:49:816 CAT java.lang.IllegalArgumentException com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets 529
+                                                                            - C:\IntegrationTester\Apps\logs\RTCP\ffdc\ffdc_20.01.24_10.02.49.0.log
+     1      1    1/24/20 10:03:15:991 CAT    1/24/20 10:03:15:991 CAT org.springframework.beans.factory.UnsatisfiedDependencyException com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181
+                                                                            - C:\IntegrationTester\Apps\logs\RTCP\ffdc\ffdc_20.01.24_10.03.15.0.log
+------+------+---------------------------+---------------------------+---------------------------

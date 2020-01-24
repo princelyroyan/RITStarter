@@ -1,0 +1,374 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %Bundle-Vendor
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.opensaml
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/org.opensaml;tag=v201105210827
+Export-Package: org.opensaml;version="1.1.0";uses:="javax.servlet.http
+ ,javax.xml.namespace,javax.xml.parsers,javax.xml.validation,org.apach
+ e.log4j,org.opensaml.artifact,org.w3c.dom,org.xml.sax",org.opensaml.a
+ rtifact;version="1.1.0",org.opensaml.provider;version="1.1.0";uses:="
+ javax.servlet.http,org.opensaml,org.w3c.dom"
+Bundle-Version: 1.1.1001
+Bundle-ManifestVersion: 2
+Import-Package: javax.net.ssl,javax.servlet;version="[2.5.0, 4.0.0)",j
+ avax.servlet.http;version="[2.5.0, 4.0.0)",javax.xml.namespace,javax.
+ xml.parsers,javax.xml.transform,javax.xml.transform.sax,javax.xml.tra
+ nsform.stream,javax.xml.validation,junit.framework;version="[3.8.2, 4
+ .0.0)";resolution:=optional,junit.textui;version="[3.8.2, 4.0.0)";res
+ olution:=optional,org.apache.commons.codec.binary;version="[1.3.0, 2.
+ 0.0)",org.apache.log4j;version="[1.2.15, 2.0.0)",org.apache.xml.secur
+ ity;version="[1.0.5.D2, 2.0.0)",org.apache.xml.security.algorithms;ve
+ rsion="[1.0.5.D2, 2.0.0)",org.apache.xml.security.c14n;version="[1.0.
+ 5.D2, 2.0.0)",org.apache.xml.security.exceptions;version="[1.0.5.D2, 
+ 2.0.0)",org.apache.xml.security.keys;version="[1.0.5.D2, 2.0.0)",org.
+ apache.xml.security.keys.content;version="[1.0.5.D2, 2.0.0)",org.apac
+ he.xml.security.keys.content.x509;version="[1.0.5.D2, 2.0.0)",org.apa
+ che.xml.security.signature;version="[1.0.5.D2, 2.0.0)",org.apache.xml
+ .security.transforms;version="[1.0.5.D2, 2.0.0)",org.apache.xml.secur
+ ity.transforms.params;version="[1.0.5.D2, 2.0.0)",org.apache.xml.secu
+ rity.utils;version="[1.0.5.D2, 2.0.0)",org.w3c.dom,org.xml.sax
+Bundle-ClassPath: org.opensaml_1.1.0.v201105210827.jar
+
+Name: org/opensaml/provider/SecureRandomIDProvider.class
+SHA1-Digest: LrTR7QHHjBRBcGM70OApRPKuY7U=
+
+Name: org/opensaml/SOAPException.class
+SHA1-Digest: gnPTkRMSXBUlvEpYMA6/aWJglSg=
+
+Name: org/opensaml/UnsupportedExtensionException.class
+SHA1-Digest: MZvntG8NF9JIxAyHmxh8UDz+97s=
+
+Name: org/opensaml/artifact/SAMLArtifactType0002$Parser.class
+SHA1-Digest: af0oAo/907pIISuI1DiS0G3dcMg=
+
+Name: org/opensaml/SAMLObject.class
+SHA1-Digest: Z92Zzw2IxcoP7ObGCGaRfx1FsaY=
+
+Name: org/opensaml/SAMLResponse.class
+SHA1-Digest: AAWZKChY5NIqu28DY5DjvTvqFMI=
+
+Name: org/opensaml/artifact/URI.class
+SHA1-Digest: 1+xcRodY3VHQH4lhI7igKTgLEA4=
+
+Name: org/opensaml/SAMLBindingFactory.class
+SHA1-Digest: 14hAVN3qHYpazZ9rDIuSJ4GfMUw=
+
+Name: org/opensaml/SAMLBrowserProfile$BrowserProfileRequest.class
+SHA1-Digest: SAMCru3Z/c0ZEtmSDQM2Ub0mNEY=
+
+Name: org/opensaml/SAMLBinding.class
+SHA1-Digest: Q5loS+nPDMcp1M+04Yq6YrsnVco=
+
+Name: org/opensaml/artifact/InvalidArgumentException.class
+SHA1-Digest: 87Oqq3IeSLKMqxplf8wTGB1yZhI=
+
+Name: org/opensaml/SAMLAuthorizationDecisionQuery.class
+SHA1-Digest: X1nRE4GqEbEsn/kw9U0y2tGRYjU=
+
+Name: org/opensaml/SAMLAudienceRestrictionCondition.class
+SHA1-Digest: u29rek3vcGGlfJaT+EmCtDGui7c=
+
+Name: org/opensaml/POSTProfileTest.class
+SHA1-Digest: kOfRb6Hq8GBqEldc9RtLf4AMhNk=
+
+Name: org/opensaml/SAMLAttributeDesignator.class
+SHA1-Digest: mqH07KgXoxzpiNaO0NmsGUjmksk=
+
+Name: org/opensaml/InvalidAssertionException.class
+SHA1-Digest: +jXumEsC0mOBCpOoLcdtVPhAd1U=
+
+Name: org/opensaml/BindingException.class
+SHA1-Digest: zEHvypmqcG1dJPbxzfUjL95h4pQ=
+
+Name: org/opensaml/RetryableProfileException.class
+SHA1-Digest: Rl03ixAA5MP4ByVPSQD8esHLQhg=
+
+Name: org/opensaml/FatalProfileException.class
+SHA1-Digest: l0GPQCmcvXBqoMSAStsybUyxznw=
+
+Name: schemas/cs-sstc-schema-protocol-1.1.xsd
+SHA1-Digest: mc0M8xArxTiFEdS/PjkpdZpzfzA=
+
+Name: org/opensaml/artifact/Artifact$Parser.class
+SHA1-Digest: 7mijGF83Zkzsd+6IXcPWhWHDnPw=
+
+Name: org/opensaml/TrustException.class
+SHA1-Digest: frlA7Pi4Re07+iGwK9u+nti3+q4=
+
+Name: org/opensaml/artifact/TwoByteSequence.class
+SHA1-Digest: keToCul7/7IGelkBSzmT5k13N0w=
+
+Name: org/opensaml/SAMLIdentifierFactory.class
+SHA1-Digest: UkwpT7R3+fjJzX9xEHW4BrDOpOk=
+
+Name: org/opensaml/NoSuchProviderException.class
+SHA1-Digest: GPRiXaL6gxemvHXwqsGCqy0Bu6U=
+
+Name: org/opensaml/ReplayCache.class
+SHA1-Digest: xsDozguLbGRXw7GGTWpXOwJ8hEg=
+
+Name: org/opensaml/artifact/SAMLArtifactType0001$RemainingArtifact.cla
+ ss
+SHA1-Digest: clSgBgQ45LqroUfIMaJCJScN+NM=
+
+Name: org/opensaml/artifact/SAMLArtifactType0002$RemainingArtifact.cla
+ ss
+SHA1-Digest: 6v4JtGXeRwA9en7r3vMj/DWa6oM=
+
+Name: org/opensaml/XML$ParserPool.class
+SHA1-Digest: WqI03MBUSddY02IEkhTcqcGCkD4=
+
+Name: org/opensaml/artifact/ArtifactParseException.class
+SHA1-Digest: 8GpJ+SeChYf1W0tyWwjFIYr7Pmk=
+
+Name: org/opensaml/artifact/ArtifactTestCase.class
+SHA1-Digest: nFywpKM6UBkPeZDD2X53sgTvSIw=
+
+Name: org/opensaml/ExpiredAssertionException.class
+SHA1-Digest: L1jluqw1QCCXzzMV3yvHgH1Dc6E=
+
+Name: org/opensaml/SAMLAssertion.class
+SHA1-Digest: boJLAeFDtJaNp6o/7uahoMMkbl4=
+
+Name: org/opensaml/SignatureTest$1.class
+SHA1-Digest: rMpELPu234zPv+V0mBkiKvQMk+M=
+
+Name: schemas/xml.xsd
+SHA1-Digest: k86hZnCAHUzVoV/ewhkqNn2sf24=
+
+Name: schemas/cs-sstc-schema-assertion-01.xsd
+SHA1-Digest: wINeTgbubLCUgsKlIo3sSFW1GNA=
+
+Name: org/opensaml/UnsupportedProfileException.class
+SHA1-Digest: yFfDvgltrZYFWqs6utrbfMlrez8=
+
+Name: about_files/LICENSE.txt
+SHA1-Digest: YN7PlLnwJIupnbAWlB5WsAGIhjo=
+
+Name: conf/opensaml.properties
+SHA1-Digest: KGHK7kLt9rbIrd5MKCmFKvit2Yg=
+
+Name: org/opensaml/SAMLDecision.class
+SHA1-Digest: l2OaS5jGv4WRG/Wyr6XlAdRiePU=
+
+Name: org/opensaml/SAMLSOAPHTTPBinding$HTTPHook.class
+SHA1-Digest: 1tPnO8uIDLmhZicPxyY7HU744xA=
+
+Name: org/opensaml/SAMLSOAPHTTPBinding.class
+SHA1-Digest: 6Zx+djFRfadS1M/1S+oerIjtiEU=
+
+Name: org/opensaml/artifact/SAMLArtifactType0001$Parser.class
+SHA1-Digest: uxGeeX7hWcAOTSFfyiAaCkXe7ho=
+
+Name: org/opensaml/SAMLSOAPBinding.class
+SHA1-Digest: 49oQcMXu/+l7G4kN2yZOWWltISY=
+
+Name: about.html
+SHA1-Digest: /Dkaf4Qpg2cbM9B+Jr6TaTQrymM=
+
+Name: org/opensaml/SAMLAttribute.class
+SHA1-Digest: hcJhKvEbBbDUInoio34riukXEqc=
+
+Name: org/opensaml/artifact/Artifact$RemainingArtifact.class
+SHA1-Digest: zZt8M41teOvidQI6mW/ZHmnoIO0=
+
+Name: org/opensaml/UnknownAssertionException.class
+SHA1-Digest: iA9pjNTYm44cEgxewD2L7eHB3U4=
+
+Name: org/opensaml/XML.class
+SHA1-Digest: dSZWYpJfpgfmxVpJP5hdKOkevKk=
+
+Name: org/opensaml/SAMLBrowserProfileFactory.class
+SHA1-Digest: JrkcOcY4dbDjAVCdTLle3IyK93U=
+
+Name: org/opensaml/artifact/SAMLArtifact.class
+SHA1-Digest: U5vWA733B70KEiMg5KPrwaB0CAc=
+
+Name: org/opensaml/SAMLSubject.class
+SHA1-Digest: S+dtPK9CtAHOZjbSZTC4LqMlebk=
+
+Name: org/opensaml/ProfileException.class
+SHA1-Digest: 3Bbx8bdKirzWXpahDPs1HvGfrvo=
+
+Name: org/opensaml/SAMLAuthenticationQuery.class
+SHA1-Digest: LQs1vdzgaZD++l0HBGKzoHS049E=
+
+Name: org/opensaml/SAMLSubjectQuery.class
+SHA1-Digest: KfMeZ4khHmdCBOGPbr0vXpm15sc=
+
+Name: schemas/xmldsig-core-schema.xsd
+SHA1-Digest: E9osV0JWxr4TQG8lMsuCVNEgTXs=
+
+Name: org/opensaml/ReplayCacheFactory.class
+SHA1-Digest: ZQPlBZ8psLxMdH0H41cRBEoW9rI=
+
+Name: org/opensaml/SignatureTest$theTest.class
+SHA1-Digest: r2qiXQhszAMLqnTZAG6Ln3b6BLc=
+
+Name: org/opensaml/artifact/SAMLArtifactType0002Test.class
+SHA1-Digest: th5mvS1Rqtciy9zoW7Er7NDFCXM=
+
+Name: org/opensaml/SAMLAttributeQuery.class
+SHA1-Digest: lCLR1AqfWSYLoxka4mUbZQu88Mo=
+
+Name: org/opensaml/artifact/SAMLArtifactType0001.class
+SHA1-Digest: o9n3qWR/3y1we8HPDisoQ9yRfNU=
+
+Name: org/opensaml/SAMLBrowserProfile$BrowserProfileResponse.class
+SHA1-Digest: qNTxXrtmRJhvWF/8Q8mwYCCFkI4=
+
+Name: org/opensaml/SAMLNameIdentifier.class
+SHA1-Digest: NkxjSG577odRaRtYFttzCkPm/Ro=
+
+Name: org/opensaml/SAMLQuery.class
+SHA1-Digest: CrFDolg6rGUOt126txmRXeIJxs4=
+
+Name: org/opensaml/SAMLPOSTProfile.class
+SHA1-Digest: eI8cw+o7MIwwVaeD4NzoGg1jVT0=
+
+Name: org/opensaml/SAMLSOAPBinding$SOAPHook.class
+SHA1-Digest: saUFcEGPU69pcUU9HKw9eAmeo40=
+
+Name: org/opensaml/SAMLAttributeTest.class
+SHA1-Digest: NvzztETOEQMnuelJiveTskz+YS0=
+
+Name: org/opensaml/SAMLRequest.class
+SHA1-Digest: akXwsq7Nr4jMADIHgv9Q54lLeTQ=
+
+Name: schemas/cs-sstc-schema-protocol-01.xsd
+SHA1-Digest: 7TMim1Ep5hgCrJPzTfaSpiKftHs=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/opensaml/provider/MemoryReplayCacheProvider.class
+SHA1-Digest: CNHKM6XHlEpCco8hHU7wfILRbLI=
+
+Name: org/opensaml/SAMLBrowserProfile.class
+SHA1-Digest: ZNeBTwDkF+tT/p6dRm+xReBFBLs=
+
+Name: org/opensaml/artifact/NullArgumentException.class
+SHA1-Digest: 72I3laR+Q2O1UOpZmeVyJUcKDcU=
+
+Name: org/opensaml/ReplayedAssertionException.class
+SHA1-Digest: zt27zw2rTKIFFxuYyJP0hBnYrIQ=
+
+Name: org/opensaml/SAMLCondition.class
+SHA1-Digest: IITvRnd6AexaUMBgQuplkJZ3y30=
+
+Name: org/opensaml/provider/BrowserProfileProvider.class
+SHA1-Digest: x7qQ7dsASu9sQPoWU/2Zh+VYia4=
+
+Name: org/opensaml/SAMLSubjectTest.class
+SHA1-Digest: Ftx7tmowJ2f+FiS0D5tK71Z/lmc=
+
+Name: org/opensaml/SAMLDoNotCacheCondition.class
+SHA1-Digest: R5ef8Qo/srcSNcbSDLsRVuXTnYQ=
+
+Name: schemas/cs-sstc-schema-assertion-1.1.xsd
+SHA1-Digest: 7yoXADyLeUGaDFEcEa+h4VoFcnA=
+
+Name: org/opensaml/SOAPBinding.class
+SHA1-Digest: V4PBXYrQ2SHQHn5zHa1qqvrhmsI=
+
+Name: org/opensaml/SAMLAction.class
+SHA1-Digest: z8KD2mp+FSTlyyXAplToqwrSoUY=
+
+Name: org/opensaml/SAMLSignedObject.class
+SHA1-Digest: zj0LKViUGs2L7gtBTBfztO9TGC8=
+
+Name: org/opensaml/SAMLConfig.class
+SHA1-Digest: sEPUr/qophTRANKBEMsfMdRAHew=
+
+Name: org/opensaml/SAMLBrowserProfile$ArtifactMapper.class
+SHA1-Digest: xUq9bGk5CJKFLgTE2ZfI9QJbGhs=
+
+Name: org/opensaml/SAMLAuthorityBinding.class
+SHA1-Digest: omNwnMBoHqFheHpOF++mlHAcJvs=
+
+Name: org/opensaml/artifact/SAMLArtifact$TypeCode.class
+SHA1-Digest: jrW2PQvmBE5zJuKAMYqkIUpJ3FQ=
+
+Name: org/opensaml/artifact/SAMLArtifactType0001Test.class
+SHA1-Digest: zhzXSlJlwVroadYpIVU7lKSW9VY=
+
+Name: org/opensaml/SignatureTest.class
+SHA1-Digest: UD8nBGVQ43JsvLZCwpgtNEbt9Ag=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: frlyBlP/dwT+a0EHKDARjD7mIkc=
+
+Name: org/opensaml/SAMLNameIdentifierTest.class
+SHA1-Digest: MDXu7SBk5bPWCkO0al7W2PBVvp8=
+
+Name: org/opensaml/artifact/Artifact.class
+SHA1-Digest: LR5mnfCgcsHsaCDV0q+KXWe1hKc=
+
+Name: schemas/soap-envelope.xsd
+SHA1-Digest: lbaoUFuMeZ9gJWnsNMEaJTSIkBU=
+
+Name: org/opensaml/artifact/Artifact$TypeCode.class
+SHA1-Digest: X26zi2Sa+w4wcqV2Uk9ggIYkj/g=
+
+Name: org/opensaml/artifact/SAMLArtifactType0002.class
+SHA1-Digest: LgGhGQVHEds0v6QhuEyeZK3OgzM=
+
+Name: org/opensaml/artifact/ByteSizedSequence.class
+SHA1-Digest: sSEmN8BNKAhQSHoyjbzA2kSIroU=
+
+Name: org/opensaml/artifact/ArtifactParserException.class
+SHA1-Digest: z8IHWL/Hwb3yyOsU8UUDQwIko00=
+
+Name: org/opensaml/provider/SOAPHTTPBindingProvider.class
+SHA1-Digest: A3VsJgMa3pyhroqopWDPXHBRWSA=
+
+Name: org/opensaml/artifact/SAMLArtifact$RemainingArtifact.class
+SHA1-Digest: ofTc2KjcDUVg8l8QRKW0LdFi6/M=
+
+Name: org/opensaml/artifact/SAMLArtifact$Parser.class
+SHA1-Digest: /X+OWxuWWqzwIf/XvWrj5hC3MAY=
+
+Name: org/opensaml/SAMLException.class
+SHA1-Digest: nXL1F+iEKPayeLbflIFk6jhg09E=
+
+Name: org/opensaml/SOAPHTTPBindingTest.class
+SHA1-Digest: T+D/xaANNORSWaKRXCGfOlU/Y/g=
+
+Name: org/opensaml/SAMLAuthenticationStatement.class
+SHA1-Digest: TN34e/IJIhhqGzIpEpM0C6XQTU4=
+
+Name: org/opensaml/SAMLSubjectStatement.class
+SHA1-Digest: iLv/wipQBDYQByYadhYNJBFijKE=
+
+Name: org/opensaml/MalformedException.class
+SHA1-Digest: fxiVTFUo0GB/AzebgwTBQ/sDoNc=
+
+Name: org/opensaml/SAMLActionTest.class
+SHA1-Digest: PZ9X04l9sXRb0y3/S+n43IpQTNo=
+
+Name: org/opensaml/SAMLIdentifier.class
+SHA1-Digest: mlDmk9rWYbfWyOGON3A5JN2M+GI=
+
+Name: org/opensaml/InvalidCryptoException.class
+SHA1-Digest: jQ8gG5DIpRtRkL1s0IFcK556DYM=
+
+Name: org/opensaml/artifact/SAMLArtifactChecking.class
+SHA1-Digest: 25La+v1J/ZspNknyl5ikF+7dJ5w=
+
+Name: org/opensaml/SAMLAttributeStatement.class
+SHA1-Digest: n9ExnCEyXFu4AWLT+2IPlz2RLU8=
+
+Name: org/opensaml/artifact/Util.class
+SHA1-Digest: 3l91xVm6UglxDCakLf95QR4KVB8=
+
+Name: org/opensaml/SAMLAuthorizationDecisionStatement.class
+SHA1-Digest: UdQ5S54uKNpyjXETFNQEq4DX0PQ=
+
+Name: org/opensaml/artifact/ArtifactTest.class
+SHA1-Digest: Iq5H33B4zMhzV0thF4LTJWGguBY=
+
+Name: org/opensaml/SAMLStatement.class
+SHA1-Digest: /ooFYZjQOihBm9I0ewFnmhjDaSQ=
+

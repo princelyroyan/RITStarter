@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MESP
+Bundle-SymbolicName: net.sourceforge.mesp
+Bundle-Version: 1.0.0
+Bundle-ClassPath: mesp.jar
+Bundle-Vendor: sourceforge.net
+Export-Package: com.graphbuilder.math,
+ com.graphbuilder.math.func,
+ com.graphbuilder.struc

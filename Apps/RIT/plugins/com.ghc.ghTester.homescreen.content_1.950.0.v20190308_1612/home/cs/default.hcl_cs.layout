@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="default">
+	<name>výchozí</name>
+
+	<size cols="-1.0,-1.0" rows="-1.0"/>
+
+	<section id="1ea91105:14a0add39e5:-8000" placement="0,0" cols="3">
+		<name>Začínáme</name>
+		<feed uri="perspective.atom"/>
+		<feed uri="create.atom"/>
+		<feed uri="build.atom"/>
+		<feed uri="databases.atom"/>
+		<feed uri="testData.atom"/>
+		<feed uri="sharing.atom"/>
+		<feed uri="discovery.atom"/>
+	</section>
+
+	<section id="1ea91105:14a0add39e5:-7fff" placement="1,0" cols="3">
+		<name>Rozšířit své znalosti</name>
+		<feed ignoreGroupings="true" uri="discovery.atom"/>
+		<feed uri="extendKnowledge.atom"/>
+	</section>
+
+</layout>

@@ -1,0 +1,96 @@
+com.ibm.websphere.appserver.appLifecycle-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.appLifecycle-1.0.mf;1557939484992;835;;2;PROTECTED;NEVER;1.0.0;00000;SERVER,CLIENT
+com.ibm.websphere.appserver.javax.jsp-2.3=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javax.jsp-2.3.mf;1557939485242;976;;2;PRIVATE;NEVER;1.0.0;00001;SERVER
+com.ibm.ws.injection.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.injection.nls-1.0.mf;1557939485733;966;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.injection-1.0))"
+com.ibm.ws.javaee.ddmodel.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.javaee.ddmodel.nls-1.0.mf;1557939485749;920;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.javaeedd-1.0))"
+com.ibm.websphere.appserver.el-3.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.el-3.0.mf;1557939485101;1115;el-3.0;2;PUBLIC;ALWAYS;3.0.0;00101;SERVER
+-A:javax.el; type=spec,org.apache.el; type=internal,org.apache.el.lang; type=internal,org.apache.el.util; type=internal,org.apache.el.stream; type=internal
+com.ibm.ws.session.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.session.nls-1.0.mf;1557939485858;1019;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.sessionDatabase-1.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.1)))"
+com.ibm.ws.artifact.zip.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.artifact.zip.nls-1.0.mf;1557939485655;914;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.artifact-1.0))"
+com.ibm.websphere.appserver.requestProbes-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.requestProbes-1.0.mf;1557939485311;763;;2;PRIVATE;NEVER;1.0.0;00000;SERVER
+com.ibm.websphere.appserver.dynamicBundle-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.dynamicBundle-1.0.mf;1557939485086;800;;2;PRIVATE;NEVER;1.0.0;00000;SERVER,CLIENT
+com.ibm.websphere.appserver.injection-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.injection-1.0.mf;1557939485117;942;;2;PRIVATE;NEVER;1.0.0;00000;SERVER,CLIENT
+com.ibm.websphere.appserver.javaeePlatform-7.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javaeePlatform-7.0.mf;1557939485164;1016;;2;PRIVATE;NEVER;1.0.0;00000;SERVER,CLIENT
+com.ibm.ws.security.java2sec.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.security.java2sec.nls-1.0.mf;1557939485843;1001;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.osgiApplication-1.0)(osgi.identity=com.ibm.websphere.appserver.javaeePlatform-6.0)))"
+com.ibm.websphere.appserver.javax.el-3.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javax.el-3.0.mf;1557939485226;790;;2;PRIVATE;NEVER;1.0.0;00001;SERVER
+com.ibm.ws.classloading.configuration.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.classloading.configuration.nls-1.0.mf;1557939485702;956;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.artifact-1.0))"
+com.ibm.ws.jndi.url.contexts.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.jndi.url.contexts.nls-1.0.mf;1557939485780;925;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.jndi-1.0))"
+com.ibm.ws.classloading.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.classloading.nls-1.0.mf;1557939485718;918;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.classloading-1.0))"
+com.ibm.ws.ssl.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.ssl.nls-1.0.mf;1557939485874;882;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.ssl-1.0))"
+com.ibm.ws.app.manager.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.app.manager.nls-1.0.mf;1557939485608;913;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.appmanager-1.0))"
+com.ibm.websphere.appserver.javaeePlatform7.0-jndi1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javaeePlatform7.0-jndi1.0.mf;1557939485179;1121;;2;PRIVATE;NEVER;1.0.0;10000;SERVER,CLIENT
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.javaeePlatform-7.0))",osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.jndi-1.0))"
+com.ibm.ws.anno.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.anno.nls-1.0.mf;1557939485514;886;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.anno-1.0))"
+com.ibm.ws.webcontainer.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.webcontainer.nls-1.0.mf;1557939485905;1033;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.servlet-3.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.1)(osgi.identity=com.ibm.websphere.appserver.syncToOSThread-1.0)))"
+com.ibm.websphere.appserver.javaeedd-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javaeedd-1.0.mf;1557939485195;1656;;2;PRIVATE;NEVER;1.0.0;00010;SERVER,CLIENT
+-S:com.ibm.ws.javaee.dd.appbnd,com.ibm.ws.javaee.dd.common,com.ibm.ws.javaee.dd.web,com.ibm.ws.javaee.dd.web.common,com.ibm.ws.javaee.dd.webbnd,com.ibm.ws.javaee.dd.webext,com.ibm.ws.javaee.dd.commonbnd,com.ibm.ws.javaee.dd.commonext,com.ibm.ws.javaee.dd.jsp
+com.ibm.ws.app.manager.war.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.app.manager.war.nls-1.0.mf;1557939485624;1092;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.ejbCore-1.0)(osgi.identity=com.ibm.websphere.appclient.appClient-1.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.1)))"
+com.ibm.ws.webcontainer.servlet.3.1.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.webcontainer.servlet.3.1.nls-1.0.mf;1557939485921;949;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.servlet-3.1))"
+com.ibm.websphere.appserver.javax.annotation-1.1=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javax.annotation-1.1.mf;1557939485211;851;;2;PRIVATE;NEVER;1.0.0;00001;SERVER,CLIENT
+com.ibm.websphere.appserver.jsp-2.3=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.jsp-2.3.mf;1557939485296;3055;jsp-2.3;2;PUBLIC;ALWAYS;1.0.0;00111;SERVER
+-A:javax.servlet.jsp; type=spec,javax.servlet.jsp.el; type=spec,javax.servlet.jsp.tagext; type=spec,javax.servlet.jsp.jstl.sql; type=spec,javax.servlet.jsp.jstl.tlv; type=spec,javax.servlet.jsp.jstl.core; type=spec,javax.servlet.jsp.jstl.fmt; type=spec,javax.el; type=spec,org.apache.taglibs.standard; type=internal,org.apache.taglibs.standard.tag.common.core; type=internal,org.apache.taglibs.standard.tag.common.fmt; type=internal,org.apache.taglibs.standard.tag.common.sql; type=internal,org.apache.taglibs.standard.tag.common.xml; type=internal,org.apache.taglibs.standard.tag.el.core; type=internal,org.apache.taglibs.standard.tag.el.fmt; type=internal,org.apache.taglibs.standard.tag.el.sql; type=internal,org.apache.taglibs.standard.tag.el.xml; type=internal,org.apache.taglibs.standard.functions; type=internal,org.apache.taglibs.standard.tag.rt.core; type=internal,org.apache.taglibs.standard.tag.rt.fmt; type=internal,org.apache.taglibs.standard.tag.rt.sql; type=internal,org.apache.taglibs.standard.tag.rt.xml; type=internal,org.apache.el; type=internal,org.apache.el.lang; type=internal,org.apache.jasper.el; type=internal
+-S:com.ibm.wsspi.jsp.taglib.config
+com.ibm.websphere.appserver.internal.slf4j-1.7.7=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.internal.slf4j-1.7.7.mf;1557939485133;837;;2;PRIVATE;NEVER;1.0.0;00000;SERVER
+com.ibm.ws.artifact.loose.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.artifact.loose.nls-1.0.mf;1557939485639;920;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.artifact-1.0))"
+com.ibm.ws.app.manager.module.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.app.manager.module.nls-1.0.mf;1557939485577;1059;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.osgiApplication-1.0)(osgi.identity=com.ibm.websphere.appserver.javaeePlatform-6.0)(osgi.identity=com.ibm.websphere.appserver.servlet-3.0)))"
+com.ibm.websphere.appserver.artifact-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.artifact-1.0.mf;1557939485023;1956;;2;PRIVATE;NEVER;1.0.0;00010;SERVER,CLIENT
+-S:com.ibm.wsspi.adaptable.module,com.ibm.ws.adaptable.module.structure,com.ibm.wsspi.adaptable.module.adapters,com.ibm.wsspi.artifact,com.ibm.wsspi.artifact.factory,com.ibm.wsspi.artifact.factory.contributor,com.ibm.wsspi.artifact.overlay,com.ibm.wsspi.artifact.equinox.module
+com.ibm.ws.channel.ssl.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.channel.ssl.nls-1.0.mf;1557939485671;906;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.ssl-1.0))"
+com.ibm.websphere.appserver.javax.servlet-3.1=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javax.servlet-3.1.mf;1557939485267;805;;2;PRIVATE;NEVER;1.0.0;00001;SERVER
+com.ibm.websphere.appserver.containerServices-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.containerServices-1.0.mf;1557939485070;1808;;2;PROTECTED;NEVER;1.0.0;00010;SERVER,CLIENT
+-S:com.ibm.ws.container.service.annotations,com.ibm.ws.container.service.app.deploy,com.ibm.ws.container.service.config,com.ibm.ws.container.service.naming,com.ibm.ws.container.service.security,com.ibm.ws.container.service.state,com.ibm.ws.serialization,com.ibm.wsspi.resource
+com.ibm.websphere.appserver.classloading-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.classloading-1.0.mf;1557939485054;1392;;2;PROTECTED;NEVER;1.0.0;00010;SERVER,CLIENT
+-S:com.ibm.wsspi.classloading,com.ibm.wsspi.library
+com.ibm.websphere.javaee.el.3.0.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.javaee.el.3.0.nls-1.0.mf;1557939485358;938;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.javax.el-3.0))"
+com.ibm.ws.channelfw.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.channelfw.nls-1.0.mf;1557939485686;906;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.channelfw-1.0))"
+com.ibm.websphere.appserver.servlet-3.1=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.servlet-3.1.mf;1557939485311;6030;servlet-3.1;2;PUBLIC;ALWAYS;1.0.0;00111;SERVER
+-A:javax.servlet.annotation; type=spec,javax.servlet.descriptor; type=spec,javax.servlet.resources; type=spec,javax.servlet.http; type=spec,javax.servlet; type=spec,com.ibm.websphere.servlet.session; type=ibm-api,com.ibm.wsspi.servlet.session; type=ibm-api,com.ibm.websphere.servlet.error; type=ibm-api,com.ibm.websphere.servlet.container; type=ibm-api,com.ibm.websphere.servlet.context; type=ibm-api,com.ibm.websphere.servlet.event; type=ibm-api,com.ibm.websphere.webcontainer; type=ibm-api,com.ibm.wsspi.webcontainer; type=internal,com.ibm.wsspi.webcontainer.annotation; type=internal
+-S:com.ibm.wsspi.webcontainer,com.ibm.wsspi.webcontainer.collaborator,com.ibm.wsspi.webcontainer.extension,com.ibm.wsspi.webcontainer.filter,com.ibm.wsspi.webcontainer.metadata,com.ibm.wsspi.webcontainer.osgi.extension,com.ibm.wsspi.webcontainer.servlet,com.ibm.wsspi.webcontainer.webapp,com.ibm.websphere.servlet.filter,com.ibm.websphere.servlet.response,com.ibm.ws.webcontainer.extension,com.ibm.websphere.servlet.request,com.ibm.ws.webcontainer.spiadapter.collaborator,com.ibm.websphere.webcontainer.async
+com.ibm.websphere.appserver.ssl-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.ssl-1.0.mf;1557939485327;1739;ssl-1.0;2;PUBLIC;NEVER;1.0.0;00110;SERVER,CLIENT
+-A:com.ibm.websphere.ssl; type="ibm-api"
+-S:com.ibm.wsspi.ssl
+com.ibm.websphere.appserver.javaeePlatform-6.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.javaeePlatform-6.0.mf;1557939485148;921;;2;PRIVATE;NEVER;1.0.0;00000;SERVER,CLIENT
+com.ibm.websphere.appserver.waswelcomepage-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.waswelcomepage-1.0.mf;1557939485342;1072;;2;PRIVATE;NEVER;1.0.0;10001;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.httptransport-1.0))"
+com.ibm.ws.container.service.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.container.service.nls-1.0.mf;1557939485718;938;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.containerServices-1.0))"
+com.ibm.websphere.appserver.anno-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.anno-1.0.mf;1557939484976;1497;;2;PRIVATE;NEVER;1.0.0;00110;SERVER,CLIENT
+-A:javax.annotation; type=spec,javax.annotation.security; type=spec,javax.annotation.sql; type=spec
+-S:com.ibm.wsspi.anno.classsource,com.ibm.wsspi.anno.info,com.ibm.wsspi.anno.service,com.ibm.wsspi.anno.targets,com.ibm.wsspi.anno.util
+com.ibm.ws.request.probes.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.request.probes.nls-1.0.mf;1557939485811;925;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.requestProbes-1.0))"
+com.ibm.ws.transport.http.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.transport.http.nls-1.0.mf;1557939485889;925;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.httptransport-1.0))"
+com.ibm.ws.jndi.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.jndi.nls-1.0.mf;1557939485764;886;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(osgi.identity=com.ibm.websphere.appserver.jndi-1.0))"
+com.ibm.ws.jsp.nls-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.ws.jsp.nls-1.0.mf;1557939485796;936;;2;PRIVATE;NEVER;1.0.0;10000;SERVER
+-C:osgi.identity; filter:="(&(type=osgi.subsystem.feature)(|(osgi.identity=com.ibm.websphere.appserver.jsp-2.2)(osgi.identity=com.ibm.websphere.appserver.jsp-2.3)))"
+com.ibm.websphere.appserver.httptransport-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.httptransport-1.0.mf;1557939485117;1188;;2;PRIVATE;NEVER;1.0.0;00010;SERVER
+-S:com.ibm.wsspi.http,com.ibm.wsspi.http.ee8
+com.ibm.websphere.appserver.channelfw-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.channelfw-1.0.mf;1557939485039;1168;;2;PRIVATE;NEVER;1.0.0;00100;SERVER,CLIENT
+-A:com.ibm.websphere.endpoint; type="ibm-api"
+com.ibm.websphere.appserver.appmanager-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.appmanager-1.0.mf;1557939485008;2119;;2;PROTECTED;NEVER;1.0.0;00110;SERVER,CLIENT
+-A:com.ibm.websphere.security; type=ibm-api,com.ibm.websphere.security.auth; type=ibm-api,com.ibm.websphere.security.cred; type=ibm-api,com.ibm.wsspi.security.registry; type=ibm-api,com.ibm.websphere.application; type=ibm-api,com.ibm.websphere.filemonitor; type=ibm-api,com.ibm.websphere.runtime.update; type=ibm-api
+-S:com.ibm.wsspi.application.handler
+com.ibm.websphere.appserver.jndi-1.0=F:\Software\IntegrationTester\Apps\RTCP\lib\features\com.ibm.websphere.appserver.jndi-1.0.mf;1557939485281;1510;jndi-1.0;2;PUBLIC;NEVER;1.0.0;00000;SERVER,CLIENT
+@=com.ibm.websphere.appserver.appLifecycle-1.0,com.ibm.websphere.appserver.javax.jsp-2.3,jndi-1.0,com.ibm.ws.injection.nls-1.0,com.ibm.ws.javaee.ddmodel.nls-1.0,com.ibm.ws.session.nls-1.0,com.ibm.ws.artifact.zip.nls-1.0,com.ibm.websphere.appserver.requestProbes-1.0,com.ibm.websphere.appserver.dynamicBundle-1.0,com.ibm.websphere.appserver.injection-1.0,com.ibm.websphere.appserver.javaeePlatform-7.0,com.ibm.ws.security.java2sec.nls-1.0,com.ibm.websphere.appserver.javax.el-3.0,com.ibm.ws.classloading.configuration.nls-1.0,jsp-2.3,com.ibm.ws.jndi.url.contexts.nls-1.0,com.ibm.ws.classloading.nls-1.0,com.ibm.ws.ssl.nls-1.0,com.ibm.ws.app.manager.nls-1.0,com.ibm.websphere.appserver.javaeePlatform7.0-jndi1.0,com.ibm.ws.anno.nls-1.0,com.ibm.ws.webcontainer.nls-1.0,com.ibm.websphere.appserver.javaeedd-1.0,com.ibm.ws.app.manager.war.nls-1.0,com.ibm.ws.webcontainer.servlet.3.1.nls-1.0,com.ibm.websphere.appserver.javax.annotation-1.1,com.ibm.websphere.appserver.internal.slf4j-1.7.7,com.ibm.ws.artifact.loose.nls-1.0,com.ibm.ws.app.manager.module.nls-1.0,com.ibm.websphere.appserver.artifact-1.0,com.ibm.ws.channel.ssl.nls-1.0,servlet-3.1,com.ibm.websphere.appserver.javax.servlet-3.1,ssl-1.0,com.ibm.websphere.appserver.containerServices-1.0,com.ibm.websphere.appserver.classloading-1.0,com.ibm.websphere.javaee.el.3.0.nls-1.0,com.ibm.ws.channelfw.nls-1.0,com.ibm.websphere.appserver.javaeePlatform-6.0,com.ibm.websphere.appserver.waswelcomepage-1.0,com.ibm.ws.container.service.nls-1.0,com.ibm.websphere.appserver.anno-1.0,com.ibm.ws.request.probes.nls-1.0,com.ibm.ws.transport.http.nls-1.0,com.ibm.ws.jndi.nls-1.0,com.ibm.ws.jsp.nls-1.0,com.ibm.websphere.appserver.httptransport-1.0,el-3.0,com.ibm.websphere.appserver.channelfw-1.0,com.ibm.websphere.appserver.appmanager-1.0
+-@jsp-2.3,ssl-1.0,jndi-1.0
+-#0

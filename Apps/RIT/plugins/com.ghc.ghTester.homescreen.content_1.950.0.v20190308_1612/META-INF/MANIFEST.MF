@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.ghc.ghTester.homescreen.content;singleton:=tr
+ ue
+Bundle-Name: Home Screen Content
+Bundle-Version: 1.950.0.v20190308_1612
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: IBM
+
+

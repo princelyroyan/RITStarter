@@ -1,0 +1,23 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: duptAHWl2DKIWYsSBbseAY9kLgg=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: Y+YrWYgy4+WeSL8S3P7QVFvpavo=
+
+Name: lib/external/batik-jviews-tiff-8.8.jar
+SHA1-Digest: ctF7tlOBW+po16NC7Y+ETXPo9dA=
+
+Name: lib/eclipse-framework-runtime.jar
+SHA1-Digest: 2MQgcdnFY+jpt0ZO3+zBXPm/tk0=
+
+Name: lib/external/xercesImpl-2.9.1.jar
+SHA1-Digest: cJNoT60LxAiA+13IW6EJUdMvoxw=
+
+Name: lib/external/batik-jviews-svggen-8.8.jar
+SHA1-Digest: WcgL2wxandDJwCKo+100OX0vxGc=
+
+Name: lib/external/svgdom-1.0.jar
+SHA1-Digest: kesNuaxTWQPne5WsDm/Q0cCmxQg=
+
+Name: plugin.xml
+SHA1-Digest: DNa8T6da+W0bN6I28GqDr1PIjU8=
+

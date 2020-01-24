@@ -1,0 +1,6 @@
+url-builder version is 1.1.0
+source downloaded from https://github.com/palominolabs/url-builder/tree/v1.1.0
+unzipped into Integrations/com.ibm.greenhat.palominolabs.urlbuilder
+build using gradle 1.11
+See wiki page: https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W22fb15849876_438a_8982_b27e1737fea1/page/Information%20on%203rd%20party%20packages
+

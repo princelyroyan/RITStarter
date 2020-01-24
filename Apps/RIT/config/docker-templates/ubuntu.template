@@ -1,0 +1,43 @@
+%%USER_DEFINED_COMMENT%%
+FROM ubuntu:14.04
+
+# ------------------------------------------------------------------------------------
+# All lines below should be left unchanged unless otherwise stated
+# ------------------------------------------------------------------------------------ 
+
+RUN apt-get update \
+  && apt-get install --no-install-recommends -y wget unzip \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf /tmp/*
+
+ENV RITC_VERSION=ritc-se_950 \
+   RITC_REPO=ftp://public.dhe.ibm.com/software/spcn/continuoustest/docker \
+   TINI_VERSION=v0.9.0
+
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
+RUN chmod +x /bin/tini
+
+RUN wget -nv ${RITC_REPO}/${RITC_VERSION}.zip#%%BUILD_ID%% \
+  && unzip -q ${RITC_VERSION}.zip \
+  && rm ${RITC_VERSION}.zip
+
+# ------------------------------------------------------------------------------------
+# %%LOCALE_COMMENT%%
+# ------------------------------------------------------------------------------------
+ENV RIT_LOCALE=en_US
+
+ENV LANG=${RIT_LOCALE}.UTF-8 \
+   LC_ALL=${RIT_LOCALE}.UTF-8 \
+   LANGUAGE=${RIT_LOCALE}:
+
+RUN locale-gen "${RIT_LOCALE}.UTF-8"
+
+COPY /UserLibs /UserLibs
+COPY /Project /Project
+COPY /stubs.info /stubs.info
+
+%%EXPOSE_COMMENT%%
+%%EXPOSE_STATEMENT%%
+
+ENTRYPOINT ["/bin/tini", "--", "/IntegrationTester/RunTests", "-project", "/Project/%%PROJECT_FILE%%", "-environment", "%%ENVIRONMENT%%", "-noHTTP", "-run", "%%STUBS%%", "-environmentTags", "env" ]

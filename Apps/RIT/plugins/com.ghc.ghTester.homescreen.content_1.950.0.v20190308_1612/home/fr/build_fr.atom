@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>générer</title>
+  <entry>
+    <title>Générer</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffe</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.createtestfrommessage" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Générer des tests à partir de modèles pour réduire l''impact des changements</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>Générer</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="rules" scheme="http://ibm.co/rit/home/feeds/groupings/sequence" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffd</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.rulecache.validation" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Réutiliser des règles de validation</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>Générer</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffa</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runtest" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Répéter des séquences d''actions</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>Exécuter</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff9</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runmanytests" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Exécuter de nombreux tests à l''aide d''un seul clic</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>Résultats</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff8</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.tests.savingresults" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Enregistrer mes résultats de test pour consultation ultérieure</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+</feed>
+

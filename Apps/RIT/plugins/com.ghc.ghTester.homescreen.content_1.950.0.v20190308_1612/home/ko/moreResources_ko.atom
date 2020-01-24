@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>moreResources</title>
+  <entry>
+    <title>Knowledge Center</title>
+    <link rel="alternate" href="http://www.ibm.com/support/knowledgecenter/SSBLQQ_9.5.0/com.ibm.rational.rit.accessibility.doc/helpindex_rit.html" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fdc</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <summary>Rational Integration Tester Knowledge Center</summary>
+    <media:thumbnail url="images/30x30_kc.png" />
+  </entry>
+  <entry>
+    <title>연속 테스트</title>
+    <link rel="alternate" href="https://developer.ibm.com/testing" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-04-22:4540cc60:14b0d191360:-7fdg</id>
+    <updated>2015-04-22T15:20:22Z</updated>
+    <summary>연속 테스트에 대한 아이디어를 탐색하는 개발자 센터</summary>
+    <media:thumbnail url="images/30x30_continuous_testing.png" />
+  </entry>
+  <entry>
+    <title>RIT@linkedIn</title>
+    <link rel="alternate" href="https://www.linkedin.com/groups/Rational-Integration-Tester-Green-Hat-2248735?home=&amp;gid=2248735" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fdf</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <summary>RIT@linkedIn</summary>
+    <media:thumbnail url="images/linkedin_logo.png" />
+  </entry>
+  <entry>
+    <title>예제</title>
+    <link rel="alternate" href="http://ibm-rtvs.github.io/" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fde</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <summary>GitHub의 예제</summary>
+    <media:thumbnail url="images/github_logo.png" />
+  </entry>
+  <entry>
+    <title>플립보드</title>
+    <link rel="alternate" href="https://flipboard.com/section/shift-left---test-what-matters%3B-test-it-continuously-b2rCnJ" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fdd</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <summary>서비스 시각화 매거진</summary>
+    <media:thumbnail url="images/flipboard_logo.png" />
+  </entry>
+</feed>
+

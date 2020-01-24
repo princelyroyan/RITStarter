@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: lib/palettes/jviews-palette-charts-8.8.jar,lib/palet
+ tes/jviews-palette-controls-8.8.jar,lib/palettes/jviews-palette-entit
+ ies-8.8.jar,lib/palettes/jviews-palette-shared-symbols-8.8.jar,lib/pa
+ lettes/jviews-palette-tunnel-monitoring-8.8.jar
+Bundle-Vendor: IBM
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: IBM ILOG JViews Diagrammer Predefined Palettes
+Bundle-SymbolicName: ilog.views.eclipse.diagrammer.palettes
+Eclipse-LazyStart: true
+Eclipse-ExtensibleAPI: true
+Bundle-Version: 8.8.4.v20120302
+Export-Package: ilog.views.palettes.charts,ilog.views.palettes.charts.
+ images,ilog.views.palettes.charts.symbols,ilog.views.palettes.control
+ s,ilog.views.palettes.controls.images,ilog.views.palettes.controls.re
+ sources,ilog.views.palettes.controls.symbols,ilog.views.palettes.enti
+ ties,ilog.views.palettes.entities.images,ilog.views.palettes.entities
+ .resources,ilog.views.palettes.entities.symbols,ilog.views.palettes.s
+ hared,ilog.views.palettes.shared.images,ilog.views.palettes.shared.re
+ sources,ilog.views.palettes.shared.symbols,ilog.views.palettes.tunnel
+ ,ilog.views.palettes.tunnel.images,ilog.views.palettes.tunnel.resourc
+ es,ilog.views.palettes.tunnel.symbols
+Bundle-ManifestVersion: 2
+
+Name: lib/palettes/jviews-palette-tunnel-monitoring-8.8.jar
+SHA1-Digest: SJ8MGTd23TLUxiOwDBRUJCDBJHI=
+
+Name: lib/palettes/jviews-palette-entities-8.8.jar
+SHA1-Digest: qRR6VvxlPFVWQVtNRSInjg2r7E8=
+
+Name: lib/palettes/jviews-palette-shared-symbols-8.8.jar
+SHA1-Digest: Zoah8q2g5OlFflhnUO72CDOe3/Y=
+
+Name: lib/palettes/jviews-palette-charts-8.8.jar
+SHA1-Digest: s3RrtfRaSDhQ5BwTNejKtTB6Il4=
+
+Name: lib/palettes/jviews-palette-controls-8.8.jar
+SHA1-Digest: jghMM+JoBNy4Si1VgTmHl29h8lk=
+

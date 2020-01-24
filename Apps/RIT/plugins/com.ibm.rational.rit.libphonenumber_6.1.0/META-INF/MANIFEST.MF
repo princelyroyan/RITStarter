@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Libphonenumber
+Bundle-SymbolicName: com.ibm.rational.rit.libphonenumber
+Bundle-ClassPath: lib/libphonenumber-6.1.jar
+Bundle-Version: 6.1
+Created-By: 1.8.0_45 (Oracle Corporation)
+Export-Package: com.google.i18n.phonenumbers,com.google.
+ i18n.phonenumbers.data

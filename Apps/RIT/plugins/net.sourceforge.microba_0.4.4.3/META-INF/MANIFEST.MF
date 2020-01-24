@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Microba GUI Components
+Bundle-SymbolicName: net.sourceforge.microba
+Bundle-Version: 0.4.4.3
+Bundle-ClassPath: microba-0.4.4.3.jar
+Bundle-Vendor: SourceForge
+Export-Package: com.michaelbaranov.microba,
+ com.michaelbaranov.microba.calendar,
+ com.michaelbaranov.microba.calendar.resource,
+ com.michaelbaranov.microba.calendar.ui,
+ com.michaelbaranov.microba.calendar.ui.basic,
+ com.michaelbaranov.microba.common,
+ com.michaelbaranov.microba.gradient,
+ com.michaelbaranov.microba.gradient.ui,
+ com.michaelbaranov.microba.gradient.ui.basic,
+ com.michaelbaranov.microba.gradienteditor,
+ com.michaelbaranov.microba.gradienteditor.ui,
+ com.michaelbaranov.microba.gradienteditor.ui.basic,
+ com.michaelbaranov.microba.jgraph.birdview,
+ com.michaelbaranov.microba.marker,
+ com.michaelbaranov.microba.marker.ui,
+ com.michaelbaranov.microba.marker.ui.basic,
+ com.michaelbaranov.microba.marker.ui.metal,
+ com.michaelbaranov.microba.marker.ui.motif,
+ com.michaelbaranov.microba.marker.ui.windows
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

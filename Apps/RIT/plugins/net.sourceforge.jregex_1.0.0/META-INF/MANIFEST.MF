@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JRegex
+Bundle-SymbolicName: net.sourceforge.jregex
+Bundle-Version: 1.0.0
+Bundle-ClassPath: regex.jar
+Bundle-Vendor: sourceforge.net
+Export-Package: jregex,
+ jregex.util.io

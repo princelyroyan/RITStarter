@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>extendKnowledge</title>
+  <entry>
+    <title>구성</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe7</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.configure.SSL.transport" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>ID 저장소를 사용하도록 SSL 전송 구성</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>구성</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe6</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.identitystoreconfig" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>ID 저장소 구성</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>WebMethods</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe5</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.archschoolwmis" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>WebMethods Integration Server에 대한 작업</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>웹 서비스</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe4</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.archschoolwsdl" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>웹 서비스에 대한 작업</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>레코딩</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe3</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.workingwithmessages" />
+        <perspective id="_com.ghc.ghTester.recordingstudio" />
+      </config>
+    </content>
+    <summary>Recording Studio의 메시지에 대한 작업</summary>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+</feed>
+

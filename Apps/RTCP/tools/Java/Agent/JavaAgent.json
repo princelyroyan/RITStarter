@@ -1,0 +1,10 @@
+// NLS_CHARSET=UTF-8
+{
+  "name": "%JavaAgentTool_name%",
+  "version": "9.5.0.0",
+  "description": "%JavaAgentTool_description%",
+  "link": {
+    "text": "%JavaAgentTool_linkText%",
+    "url": "http://www.ibm.com/support/knowledgecenter/SSBLQQ_9.1.1/com.ibm.rational.rit.integration.doc/topics/c_ritpp_jv_agent.html"
+  }
+}

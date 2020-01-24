@@ -1,0 +1,15 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: vRP4sEfvaSkMpcuR2/TP2nz4HLo=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: 3QvZssf3gpKGpy3Eio7RcjSRLPk=
+
+Name: ilog/views/eclipse/diagrammer/runtime/DiagrammerRuntimePlugin.cl
+ ass
+SHA1-Digest: q9WxAqYFrGnu+FT5OgPrEr1GWqg=
+
+Name: plugin.xml
+SHA1-Digest: DNa8T6da+W0bN6I28GqDr1PIjU8=
+
+Name: lib/eclipse-diagrammer-runtime.jar
+SHA1-Digest: 3lpF4LUryl6K/VLvACwVvjcZayM=
+

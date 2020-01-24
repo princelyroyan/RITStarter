@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:oxm="http://www.springframework.org/schema/oxm"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd  http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+
+	<bean id="rest"
+		class="com.greenhat.server.examples.server.rest.phonebook.PhonebookRestServiceController">
+		<constructor-arg ref="discoveryService"/>
+	</bean>
+
+		<!-- REST service -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<util:list id="beanList">
+				<ref bean="stringHttpMessageConverter" />
+				<ref bean="byteArrayHttpMessageConverter" />
+				<ref bean="MappingJackson2HttpMessageConverter" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="MappingJackson2HttpMessageConverter" 
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="objectMapper">
+			<bean class="com.fasterxml.jackson.databind.ObjectMapper"> 
+				<property name="serializationInclusion">
+					<value type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value>
+				</property>
+			</bean>
+		</property>
+		
+	</bean>
+	
+
+			
+
+
+</beans>

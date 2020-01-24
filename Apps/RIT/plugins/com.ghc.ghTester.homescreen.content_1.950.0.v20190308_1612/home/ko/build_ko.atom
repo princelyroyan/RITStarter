@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>빌드</title>
+  <entry>
+    <title>빌드</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffe</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.createtestfrommessage" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>변경으로 인한 영향을 줄이기 위해 템플리트에서 테스트 빌드</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>빌드</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="rules" scheme="http://ibm.co/rit/home/feeds/groupings/sequence" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffd</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.rulecache.validation" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>유효성 검증 규칙 재사용</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>빌드</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ffa</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runtest" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>조치 순서 반복</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>실행</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff9</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.runmanytests" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>한 번의 클릭으로 다수의 테스트 실행</summary>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+  <entry>
+    <title>결과</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff8</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.tests.savingresults" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>나중에 확인하기 위해 내 테스트 결과 저장</summary>
+    <rit:condition>product.isFullEdition</rit:condition>
+    <media:thumbnail url="images/build.png" />
+  </entry>
+</feed>
+

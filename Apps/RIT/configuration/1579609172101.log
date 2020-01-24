@@ -1,0 +1,19 @@
+!SESSION 2020-01-21 14:19:30.983 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 8 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ghc.ghTester.application.product -application com.ghc.ghTester.application.application
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @user.home/.integrationtester/.eclipse/IntegrationTester/workspace -product com.ghc.ghTester.application.product -application com.ghc.ghTester.application.application
+
+!ENTRY org.eclipse.equinox.registry 2 0 2020-01-21 14:19:33.789
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.chart.runtime" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2020-01-21 14:19:33.789
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.diagrammer.runtime" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2020-01-21 14:19:33.789
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.framework.runtime" are ignored. The bundle is not marked as singleton. 

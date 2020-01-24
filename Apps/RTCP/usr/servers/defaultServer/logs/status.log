@@ -1,0 +1,12 @@
+
+arg0=defaultServer
+arg1=--status
+exit=1
+
+                 Java home:  F:\Software\IntegrationTester\Apps\jre
+              Install root:  F:/Software/IntegrationTester/Apps/RTCP/
+          System libraries:  F:/Software/IntegrationTester/Apps/RTCP/lib/
+                 User root:  F:/Software/IntegrationTester/Apps/RTCP/usr/
+                    Config:  F:/Software/IntegrationTester/Apps/RTCP/usr/servers/defaultServer/
+                    Output:  F:/Software/IntegrationTester/Apps/RTCP/usr/servers/defaultServer/
+

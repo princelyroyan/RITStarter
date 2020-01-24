@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.apache.xml.security
+Bundle-SymbolicName: org.apache.xml.security
+Bundle-Version: 1.4.3002
+Bundle-ClassPath: xmlsec-1.4.3.jar
+Bundle-Vendor: IBM
+Eclipse-BuddyPolicy: registered
+Export-Package: javax.xml.crypto; version=1.4.3,
+ javax.xml.crypto.dom; version=1.4.3,
+ javax.xml.crypto.dsig; version=1.4.3,
+ javax.xml.crypto.dsig.dom; version=1.4.3,
+ javax.xml.crypto.dsig.keyinfo; version=1.4.3,
+ javax.xml.crypto.dsig.spec; version=1.4.3,
+ org.apache.xml.security; version=1.4.3,
+ org.apache.xml.security.algorithms; version=1.4.3,
+ org.apache.xml.security.algorithms.implementations; version=1.4.3,
+ org.apache.xml.security.c14n; version=1.4.3,
+ org.apache.xml.security.c14n.helper; version=1.4.3,
+ org.apache.xml.security.c14n.implementations; version=1.4.3,
+ org.apache.xml.security.encryption; version=1.4.3,
+ org.apache.xml.security.exceptions; version=1.4.3,
+ org.apache.xml.security.keys; version=1.4.3,
+ org.apache.xml.security.keys.content; version=1.4.3,
+ org.apache.xml.security.keys.content.keyvalues; version=1.4.3,
+ org.apache.xml.security.keys.content.x509; version=1.4.3,
+ org.apache.xml.security.keys.keyresolver; version=1.4.3,
+ org.apache.xml.security.keys.keyresolver.implementations; version=1.4.3,
+ org.apache.xml.security.keys.storage; version=1.4.3,
+ org.apache.xml.security.keys.storage.implementations; version=1.4.3,
+ org.apache.xml.security.signature; version=1.4.3,
+ org.apache.xml.security.transforms; version=1.4.3,
+ org.apache.xml.security.transforms.implementations; version=1.4.3,
+ org.apache.xml.security.transforms.params; version=1.4.3,
+ org.apache.xml.security.utils; version=1.4.3,
+ org.apache.xml.security.utils.resolver; version=1.4.3,
+ org.apache.xml.security.utils.resolver.implementations; version=1.4.3,
+ org.jcp.xml.dsig.internal; version=1.4.3,
+ org.jcp.xml.dsig.internal.dom
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.apache.commons.logging

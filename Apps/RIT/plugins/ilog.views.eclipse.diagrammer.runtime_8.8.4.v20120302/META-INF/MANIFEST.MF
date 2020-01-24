@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: ilog.views.eclipse.diagrammer.runtime
+Eclipse-LazyStart: true
+Bundle-Activator: ilog.views.eclipse.diagrammer.runtime.DiagrammerRunt
+ imePlugin
+Require-Bundle: ilog.views.eclipse.framework.runtime;bundle-version="[
+ 8.8.0,8.9.0)";visibility:=reexport,org.eclipse.core.runtime,com.ibm.i
+ cu
+Bundle-Version: 8.8.4.v20120302
+Export-Package: ilog.views.animation,ilog.views.bpmn,ilog.views.bpmn.i
+ nternal,ilog.views.css.model.diagrammer,ilog.views.css.selector.diagr
+ ammer,ilog.views.dashboard,ilog.views.diagrammer,ilog.views.diagramme
+ r.application,ilog.views.diagrammer.datasource,ilog.views.diagrammer.
+ internal,ilog.views.diagrammer.project,ilog.views.diagrammer.servlet,
+ ilog.views.eclipse.diagrammer.runtime,ilog.views.graphlayout,ilog.vie
+ ws.graphlayout.beans.editor,ilog.views.graphlayout.bus,ilog.views.gra
+ phlayout.bus.beans.editor,ilog.views.graphlayout.circular,ilog.views.
+ graphlayout.circular.beans.editor,ilog.views.graphlayout.grid,ilog.vi
+ ews.graphlayout.grid.beans.editor,ilog.views.graphlayout.hierarchical
+ ,ilog.views.graphlayout.hierarchical.beans.editor,ilog.views.graphlay
+ out.hierarchical.graphbase,ilog.views.graphlayout.hierarchical.leveli
+ ng,ilog.views.graphlayout.hierarchical.makeacyclic,ilog.views.graphla
+ yout.hierarchical.relpositioning,ilog.views.graphlayout.labellayout,i
+ log.views.graphlayout.labellayout.annealing,ilog.views.graphlayout.la
+ bellayout.annealing.beans.editor,ilog.views.graphlayout.labellayout.b
+ eans.editor,ilog.views.graphlayout.labellayout.random,ilog.views.grap
+ hlayout.link,ilog.views.graphlayout.link.beans.editor,ilog.views.grap
+ hlayout.link.longlink,ilog.views.graphlayout.link.longlink.beans.edit
+ or,ilog.views.graphlayout.link.shortlink,ilog.views.graphlayout.link.
+ shortlink.beans.editor,ilog.views.graphlayout.multiple,ilog.views.gra
+ phlayout.random,ilog.views.graphlayout.random.beans.editor,ilog.views
+ .graphlayout.recursive,ilog.views.graphlayout.recursive.beans.editor,
+ ilog.views.graphlayout.springembedder,ilog.views.graphlayout.springem
+ bedder.beans.editor,ilog.views.graphlayout.swing,ilog.views.graphlayo
+ ut.topologicalmesh,ilog.views.graphlayout.topologicalmesh.beans.edito
+ r,ilog.views.graphlayout.tree,ilog.views.graphlayout.tree.beans.edito
+ r,ilog.views.graphlayout.uniformlengthedges,ilog.views.graphlayout.un
+ iformlengthedges.beans.editor,ilog.views.sdm,ilog.views.sdm.beans.edi
+ tor,ilog.views.sdm.event,ilog.views.sdm.graphic,ilog.views.sdm.graphi
+ c.util,ilog.views.sdm.interactor,ilog.views.sdm.metadata,ilog.views.s
+ dm.model,ilog.views.sdm.modeltools,ilog.views.sdm.renderer,ilog.views
+ .sdm.renderer.animation,ilog.views.sdm.renderer.chart,ilog.views.sdm.
+ renderer.graphlayout,ilog.views.sdm.renderer.graphlayout.util,ilog.vi
+ ews.sdm.renderer.maps,ilog.views.sdm.servlet,ilog.views.sdm.swing,ilo
+ g.views.sdm.util
+Bundle-ClassPath: .,lib/eclipse-diagrammer-runtime.jar
+Bundle-Vendor: IBM
+Bundle-ActivationPolicy: lazy
+Bundle-Name: IBM ILOG JViews Diagrammer Runtime for Eclipse
+Eclipse-ExtensibleAPI: true
+Bundle-ManifestVersion: 2
+
+Name: plugin.xml
+SHA1-Digest: 0OoI2HuERTltr3NYD4d0MJbpZuQ=
+
+Name: ilog/views/eclipse/diagrammer/runtime/DiagrammerRuntimePlugin.cl
+ ass
+SHA1-Digest: 4IQGGGG40SHyHftItL/N0oBFS1Y=
+
+Name: lib/eclipse-diagrammer-runtime.jar
+SHA1-Digest: ifcJGWmML7D7+33GSHcQXJ/ANvE=
+

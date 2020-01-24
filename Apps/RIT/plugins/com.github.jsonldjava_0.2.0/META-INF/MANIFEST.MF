@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: jsonld-java
+Bundle-SymbolicName: com.github.jsonldjava
+Bundle-Version: 0.2.0
+Bundle-ClassPath: jsonld-java-0.2.jar
+Bundle-Vendor: com.github.jsonldjava
+Export-Package: com.github.jsonldjava.core,
+ com.github.jsonldjava.utils
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.fasterxml.jackson.core.jackson-core;bundle-version="2.0.0",
+ slf4j.api;bundle-version="1.6.1"

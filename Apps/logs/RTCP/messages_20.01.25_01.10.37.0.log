@@ -1,0 +1,618 @@
+********************************************************************************
+product = WebSphere Application Server 17.0.0.3 (wlp-1.0.18.cl170320170927-1854)
+wlp.install.dir = C:/IntegrationTester/Apps/RTCP/
+java.home = C:\IntegrationTester\Apps\jre
+java.version = 1.8.0_181
+java.runtime = Java(TM) SE Runtime Environment (8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20))
+os = Windows 10 (10.0; amd64) (en_US)
+process = 32188@LAB10PF0ZNAAM
+********************************************************************************
+[1/24/20 10:02:42:876 CAT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[1/24/20 10:02:44:400 CAT] 0000001d com.ibm.ws.logging.internal.TraceSpecification               I TRAS0018I: The trace state has been changed. The new trace state is *=info:com.greenhat.*=info:org.springframework.*=info.
+[1/24/20 10:02:44:539 CAT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.858 seconds
+[1/24/20 10:02:44:568 CAT] 00000022 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[1/24/20 10:02:45:096 CAT] 00000025 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7819.
+[1/24/20 10:02:45:280 CAT] 0000002e com.ibm.ws.app.manager.AppMessageHelper                      W CWWKZ0014W: The application maven2 could not be started as it could not be found at location maven2.war.
+[1/24/20 10:02:45:285 CAT] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 5443.
+[1/24/20 10:02:45:314 CAT] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ROOT.
+[1/24/20 10:02:45:314 CAT] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application RTCP.
+[1/24/20 10:02:45:455 CAT] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[1/24/20 10:02:45:478 CAT] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ROOT.
+[1/24/20 10:02:45:479 CAT] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ROOT has been bound to default_host.
+[1/24/20 10:02:45:480 CAT] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:7819/
+[1/24/20 10:02:45:776 CAT] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[1/24/20 10:02:45:807 CAT] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/24/20 10:02:45:903 CAT] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application ROOT started in 0.589 seconds.
+[1/24/20 10:02:45:987 CAT] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\IntegrationTester\Apps\RTCP\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[1/24/20 10:02:46:575 CAT] 0000002c com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /RTCP/discovery/discover
+[1/24/20 10:02:51:618 CAT] 0000002a com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /RTCP/discovery/discover
+[1/24/20 10:02:54:883 CAT] 0000002d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.IllegalArgumentException com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets 529" at ffdc_20.01.24_10.02.49.0.log
+[1/24/20 10:02:54:892 CAT] 0000002d m.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets W CWWKC0044W: An exception occurred while scanning class and annotation data. The exception was java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.scanClass(AnnotationTargetsImpl_Targets.java:495)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Streamer.process(AnnotationTargetsImpl_Streamer.java:88)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.process(ClassSourceImpl_MappedContainer.java:351)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:283)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:236)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_MappedContainer.scanClasses(ClassSourceImpl_MappedContainer.java:128)
+	at com.ibm.ws.anno.classsource.internal.ClassSourceImpl_Aggregate.scanClasses(ClassSourceImpl_Aggregate.java:369)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Scanner.scanClasses(AnnotationTargetsImpl_Scanner.java:254)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Scanner.scanDirect(AnnotationTargetsImpl_Scanner.java:216)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.doScanDirectClasses(AnnotationTargetsImpl_Targets.java:379)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.scanDirectClasses(AnnotationTargetsImpl_Targets.java:348)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.selectAnnotatedTargets(AnnotationTargetsImpl_Targets.java:1746)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.getAnnotatedClasses(AnnotationTargetsImpl_Targets.java:913)
+	at com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets.getAnnotatedClasses(AnnotationTargetsImpl_Targets.java:983)
+	at com.ibm.ws.container.service.annotations.internal.WebAnnotationsImpl$FragmentAnnotationsImpl.selectAnnotatedClasses(WebAnnotationsImpl.java:453)
+	at com.ibm.ws.webcontainer.osgi.container.config.WebAppConfiguratorHelper.configureFromAnnotations(WebAppConfiguratorHelper.java:778)
+	at com.ibm.ws.webcontainer.osgi.container.config.WebAppConfigurator.configure(WebAppConfigurator.java:414)
+	at com.ibm.ws.webcontainer.osgi.container.config.WebAppConfigurationAdapter.adapt(WebAppConfigurationAdapter.java:115)
+	at com.ibm.ws.webcontainer.osgi.container.config.WebAppConfigurationAdapter.adapt(WebAppConfigurationAdapter.java:43)
+	at com.ibm.ws.adaptable.module.internal.AdapterFactoryServiceImpl.adapt(AdapterFactoryServiceImpl.java:192)
+	at com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl.adapt(AdaptableContainerImpl.java:170)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.createModuleMetaData(WebContainer.java:820)
+	at com.ibm.ws.app.manager.module.internal.ModuleHandlerBase.createModuleMetaData(ModuleHandlerBase.java:63)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase$ModuleContainerInfoBase.createModuleMetaData(SimpleDeployedAppInfoBase.java:168)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.preDeployApp(DeployedAppInfoBase.java:363)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:402)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:65)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1258)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:873)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:811)
+.
+[1/24/20 10:02:56:642 CAT] 00000025 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /RTCP/discovery/discover
+[1/24/20 10:02:57:975 CAT] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: RTCP.
+[1/24/20 10:02:57:975 CAT] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module RTCP has been bound to default_host.
+[1/24/20 10:02:57:975 CAT] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:7819/RTCP/
+[1/24/20 10:02:59:679 CAT] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/RTCP
+[1/24/20 10:02:59:679 CAT] 0000002d com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/24/20 10:02:59:732 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.No Spring WebApplicationInitializer types detected on classpath
+[1/24/20 10:02:59:816 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring root WebApplicationContext
+[1/24/20 10:02:59:816 CAT] 0000002d org.springframework.web.context.ContextLoader                I Root WebApplicationContext: initialization started
+[1/24/20 10:03:00:028 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing Root WebApplicationContext: startup date [Fri Jan 24 10:03:00 CAT 2020]; root of context hierarchy
+[1/24/20 10:03:00:175 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+[1/24/20 10:03:00:291 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from class path resource [container.server.spring.xml]
+[1/24/20 10:03:00:497 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from class path resource [proxies.server.spring.xml]
+[1/24/20 10:03:00:548 CAT] 0000002d ngframework.beans.factory.support.DefaultListableBeanFactory I Overriding bean definition for bean 'domainPersistenceUnitManager' with a different definition: replacing [Generic bean: class [org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [container.server.spring.xml]] with [Generic bean: class [org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [proxies.server.spring.xml]]
+[1/24/20 10:03:00:549 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from class path resource [vie.server.spring.xml]
+[1/24/20 10:03:00:591 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from class path resource [microbroker.server.spring.xml]
+[1/24/20 10:03:00:612 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from class path resource [tools.server.spring.xml]
+[1/24/20 10:03:01:320 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [container.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:01:330 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [proxies.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:01:339 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [vie.server.properties] cannot be opened because it does not exist
+[1/24/20 10:03:01:340 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [vie.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:01:346 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [tools.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:01:775 CAT] 0000002d greenhat.server.container.server.workspace.WorkspaceResolver I Workspace location resolved to C:\IntegrationTester\Apps\RTCP\workspace
+[1/24/20 10:03:01:802 CAT] 0000002d com.greenhat.server.container.server.audit.AuditDBResolver   I Audit DB driver resolved to org.h2.Driver
+[1/24/20 10:03:01:802 CAT] 0000002d com.greenhat.server.container.server.audit.AuditDBResolver   I Audit DB URL resolved to jdbc:h2:C:\IntegrationTester\Apps\RTCP\workspace\db
+[1/24/20 10:03:01:920 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:594 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:618 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:654 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:671 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:701 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 10:03:02:703 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'proxies'
+[1/24/20 10:03:02:718 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'proxies'
+[1/24/20 10:03:02:733 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'scenario'
+[1/24/20 10:03:02:790 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'scenario'
+[1/24/20 10:03:02:793 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'stub'
+[1/24/20 10:03:02:846 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'stub'
+[1/24/20 10:03:02:849 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'vie'
+[1/24/20 10:03:02:899 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'vie'
+[1/24/20 10:03:02:999 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Building JPA container EntityManagerFactory for persistence unit 'agent'
+[1/24/20 10:03:03:053 CAT] 0000002d ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Initialized JPA EntityManagerFactory for persistence unit 'agent'
+[1/24/20 10:03:03:142 CAT] 0000002d com.greenhat.server.container.server.logging.VersionLogger   I RTCP Version: 9.5.0.0 (2019) (I20190315_1155)
+[1/24/20 10:03:03:299 CAT] 0000002d openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:03:03:357 CAT] 0000002d com.zaxxer.hikari.HikariDataSource                           I HikariPool-1 - Started.
+[1/24/20 10:03:04:085 CAT] 0000002d openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:03:04:163 CAT] 0000002d openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:03:05:548 CAT] 0000002d openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:03:05:549 CAT] 0000002d openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:03:05:557 CAT] 0000002d openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:03:06:419 CAT] 0000002d openjpa.Runtime                                              I The Entity "com.greenhat.server.container.server.logging.orm.LogEntry" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:03:06:424 CAT] 0000002d openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 10:03:07:340 CAT] 0000002d openjpa.Runtime                                              I The Entity "com.greenhat.server.container.server.logging.orm.LogEntry" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:03:07:341 CAT] 0000002d openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 10:03:07:589 CAT] 0000002d etm.core.monitor.EtmMonitor                                  W Warning - Performance Monitoring currently disabled. If you did not start the current EtmMonitor on purpose, you may ignore this warning. Otherwhise ensure to call EtmMonitor.start() at some point in your application.
+[1/24/20 10:03:07:593 CAT] 0000002d openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:03:07:594 CAT] 0000002d openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:03:07:602 CAT] 0000002d openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:03:07:690 CAT] 0000002d openjpa.jdbc.Schema                                          W Existing column "PROXYTYPE" on table "PUBLIC.PROXYRULE" is incompatible with the same column in the given schema definition. Existing column:
+Full Name: PROXYRULE.PROXYTYPE
+Type: varchar
+Size: 255
+Default: null
+Not Null: false
+Given column:
+Full Name: PROXYRULE.PROXYTYPE
+Type: varchar
+Size: 20
+Default: null
+Not Null: false
+
+[1/24/20 10:03:07:691 CAT] 0000002d openjpa.jdbc.Schema                                          W Existing column "STATE" on table "PUBLIC.PROXYRULE" is incompatible with the same column in the given schema definition. Existing column:
+Full Name: PROXYRULE.STATE
+Type: varchar
+Size: 255
+Default: null
+Not Null: false
+Given column:
+Full Name: PROXYRULE.STATE
+Type: varchar
+Size: 20
+Default: null
+Not Null: false
+
+[1/24/20 10:03:07:692 CAT] 0000002d openjpa.Runtime                                              I The Entity "com.greenhat.server.proxies.ProxyRule" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:03:07:693 CAT] 0000002d openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 10:03:08:597 CAT] 0000002d com.greenhat.server.vie.server.DiskBasedRepositoryService    I Disk based repository service created using: C:\IntegrationTester\Apps\RTCP\workspace\repository
+[1/24/20 10:03:08:610 CAT] 0000002d com.greenhat.server.vie.server.DiskBasedRepositoryService    I 0 project files found for domain 1
+[1/24/20 10:03:08:909 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Using default implementation for ThreadExecutor
+[1/24/20 10:03:08:957 CAT] 0000002d org.quartz.core.SchedulerSignalerImpl                        I Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[1/24/20 10:03:08:958 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Quartz Scheduler v.2.2.3 created.
+[1/24/20 10:03:08:959 CAT] 0000002d org.quartz.simpl.RAMJobStore                                 I RAMJobStore initialized.
+[1/24/20 10:03:08:962 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Key_Expiry_Scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[1/24/20 10:03:08:963 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Quartz scheduler 'Key_Expiry_Scheduler' initialized from an externally provided properties instance.
+[1/24/20 10:03:08:963 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Quartz scheduler version: 2.2.3
+[1/24/20 10:03:08:967 CAT] 0000002d org.quartz.core.QuartzScheduler                              I JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4af8a70a
+[1/24/20 10:03:09:095 CAT] 0000002d etm.core.monitor.EtmMonitor                                  I JETM 1.2.3 started.
+[1/24/20 10:03:09:095 CAT] 0000002d etm.core.monitor.EtmMonitor                                  I Shutting down JETM.
+[1/24/20 10:03:10:637 CAT] 0000002d com.ibm.micro.entrypoint                                     I FMBE1200I [RTCPBroker] --------------MicroBroker Starting--------------
+[1/24/20 10:03:10:637 CAT] 0000002d com.ibm.micro.entrypoint                                     I FMBE1201I [RTCPBroker] MicroBroker version 3.0.3.1 - ub303-L131120.
+[1/24/20 10:03:11:369 CAT] 0000002d com.ibm.micro.entrypoint                                     I FMBE1210I [RTCPBroker] MicroBroker started.
+[1/24/20 10:03:11:369 CAT] 0000004c com.ibm.micro.comms                                          I FMBD1124I [RTCPBroker] Listening on port 7883
+[1/24/20 10:03:11:736 CAT] 0000004a com.ibm.micro.clients                                        I FMBT1740I [RTCPBroker] Client 'PPSSSubscriber' connected locally
+[1/24/20 10:03:11:754 CAT] 0000004a com.ibm.micro.clients                                        I FMBT1740I [RTCPBroker] Client 'PPSSPublisher' connected locally
+[1/24/20 10:03:13:210 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Using default implementation for ThreadExecutor
+[1/24/20 10:03:13:239 CAT] 0000002d org.quartz.core.SchedulerSignalerImpl                        I Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[1/24/20 10:03:13:240 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Quartz Scheduler v.2.2.3 created.
+[1/24/20 10:03:13:240 CAT] 0000002d org.quartz.simpl.RAMJobStore                                 I RAMJobStore initialized.
+[1/24/20 10:03:13:242 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Purge_Proxy_Rules_Scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 3 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[1/24/20 10:03:13:243 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Quartz scheduler 'Purge_Proxy_Rules_Scheduler' initialized from an externally provided properties instance.
+[1/24/20 10:03:13:243 CAT] 0000002d org.quartz.impl.StdSchedulerFactory                          I Quartz scheduler version: 2.2.3
+[1/24/20 10:03:13:243 CAT] 0000002d org.quartz.core.QuartzScheduler                              I JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3755c0a2
+[1/24/20 10:03:13:556 CAT] 0000002d pringframework.scheduling.concurrent.ThreadPoolTaskScheduler I Initializing ExecutorService 'taskScheduler'
+[1/24/20 10:03:13:693 CAT] 0000002d openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:03:13:696 CAT] 0000002d openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:03:13:702 CAT] 0000002d openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:03:14:320 CAT] 0000002d openjpa.Runtime                                              I The Entity "com.greenhat.server.vie.server.stub.store.jpa.JpaStubInvocationSample" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:03:14:321 CAT] 0000002d openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 10:03:14:540 CAT] 0000002d openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:03:14:542 CAT] 0000002d openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:03:14:549 CAT] 0000002d openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:03:15:131 CAT] 0000002d openjpa.Runtime                                              I The Entity "com.greenhat.server.vie.server.stub.store.jpa.JpaStubInvocationSample" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:03:15:132 CAT] 0000002d openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 10:03:15:137 CAT] 0000002d com.greenhat.server.vie.server.scenarios.JpaScenarioStore    I Store loaded 0 scenarios
+[1/24/20 10:03:15:238 CAT] 0000002d com.greenhat.server.vie.server.scenarios.ScenarioServiceImpl I Read 0 scenarios from store
+[1/24/20 10:03:15:318 CAT] 0000002e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0022W: Application RTCP has not started in 30.003 seconds.
+[1/24/20 10:03:15:349 CAT] 00000022 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [jsp-2.3, servlet-3.1, ssl-1.0, jndi-1.0, el-3.0].
+[1/24/20 10:03:15:350 CAT] 00000022 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 30.809 seconds.
+[1/24/20 10:03:15:350 CAT] 00000022 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[1/24/20 10:03:15:355 CAT] 0000002d com.greenhat.server.tools.server.ToolsStoreImpl              I toolsDir: C:\IntegrationTester\Apps\RTCP\tools
+[1/24/20 10:03:15:514 CAT] 0000002d rg.springframework.context.support.DefaultLifecycleProcessor I Starting beans in phase 2147483647
+[1/24/20 10:03:15:514 CAT] 0000002d org.springframework.scheduling.quartz.SchedulerFactoryBean   I Starting Quartz Scheduler now
+[1/24/20 10:03:15:515 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Scheduler Key_Expiry_Scheduler_$_NON_CLUSTERED started.
+[1/24/20 10:03:15:515 CAT] 0000002d org.springframework.scheduling.quartz.SchedulerFactoryBean   I Starting Quartz Scheduler now
+[1/24/20 10:03:15:515 CAT] 0000002d org.quartz.core.QuartzScheduler                              I Scheduler Purge_Proxy_Rules_Scheduler_$_NON_CLUSTERED started.
+[1/24/20 10:03:15:545 CAT] 0000002d org.springframework.web.context.ContextLoader                I Root WebApplicationContext: initialization completed in 15728 ms
+[1/24/20 10:03:15:552 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'container'
+[1/24/20 10:03:15:553 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'container': initialization started
+[1/24/20 10:03:15:566 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'container-servlet': startup date [Fri Jan 24 10:03:15 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:15:567 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/container-servlet.xml]
+[1/24/20 10:03:15:818 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/Domain/] onto handler 'container'
+[1/24/20 10:03:15:819 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/Domain/{domainName:.+}] onto handler 'container'
+[1/24/20 10:03:15:819 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/Domain/create] onto handler 'container'
+[1/24/20 10:03:15:819 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/Domain/create.*] onto handler 'container'
+[1/24/20 10:03:15:820 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/Domain/create/] onto handler 'container'
+[1/24/20 10:03:15:820 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/databasedescriptors/] onto handler 'container'
+[1/24/20 10:03:15:820 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/start] onto handler 'container'
+[1/24/20 10:03:15:821 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/start.*] onto handler 'container'
+[1/24/20 10:03:15:821 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/start/] onto handler 'container'
+[1/24/20 10:03:15:821 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/stop] onto handler 'container'
+[1/24/20 10:03:15:822 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/stop.*] onto handler 'container'
+[1/24/20 10:03:15:822 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/stop/] onto handler 'container'
+[1/24/20 10:03:15:822 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/export.txt] onto handler 'container'
+[1/24/20 10:03:15:823 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/performance/export.json] onto handler 'container'
+[1/24/20 10:03:15:823 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/log/] onto handler 'container'
+[1/24/20 10:03:15:823 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/logfeed] onto handler 'container'
+[1/24/20 10:03:15:824 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/logfeed.*] onto handler 'container'
+[1/24/20 10:03:15:824 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/logfeed/] onto handler 'container'
+[1/24/20 10:03:15:836 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'container': initialization completed in 283 ms
+[1/24/20 10:03:15:837 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [container]: Initialization successful.
+[1/24/20 10:03:15:837 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'rest'
+[1/24/20 10:03:15:838 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'rest': initialization started
+[1/24/20 10:03:15:841 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'rest-servlet': startup date [Fri Jan 24 10:03:15 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:15:841 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/rest-servlet.xml]
+[1/24/20 10:03:15:912 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'rest': initialization completed in 74 ms
+[1/24/20 10:03:15:913 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [rest]: Initialization successful.
+[1/24/20 10:03:15:913 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'agent'
+[1/24/20 10:03:15:913 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'agent': initialization started
+[1/24/20 10:03:15:916 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'agent-servlet': startup date [Fri Jan 24 10:03:15 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:15:916 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/agent-servlet.xml]
+[1/24/20 10:03:15:986 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext W Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'agent' defined in ServletContext resource [/WEB-INF/agent-servlet.xml]: Unsatisfied dependency expressed through constructor parameter 4: Could not convert argument value of type [com.sun.proxy.$Proxy37] to required type [com.greenhat.server.vie.server.ext.DomainReadService]: Failed to convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService': no matching editors or conversion strategy found
+[1/24/20 10:03:15:987 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            E Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'agent' defined in ServletContext resource [/WEB-INF/agent-servlet.xml]: Unsatisfied dependency expressed through constructor parameter 4: Could not convert argument value of type [com.sun.proxy.$Proxy37] to required type [com.greenhat.server.vie.server.ext.DomainReadService]: Failed to convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1393)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1153)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1121)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1022)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6550)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:464)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1119)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startModule(WebContainer.java:924)
+	at com.ibm.ws.app.manager.module.internal.ModuleHandlerBase.deployModule(ModuleHandlerBase.java:99)
+	at com.ibm.ws.app.manager.module.internal.DeployedModuleInfoImpl.installModule(DeployedModuleInfoImpl.java:49)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployModules(DeployedAppInfoBase.java:419)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:405)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:65)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1258)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:873)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:811)
+
+[1/24/20 10:03:16:086 CAT] 0000002d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'agent' defined in ServletContext resource [/WEB-INF/agent-servlet.xml]: Unsatisfied dependency expressed through constructor parameter 4: Could not convert argument value of type [com.sun.proxy.$Proxy37] to required type [com.greenhat.server.vie.server.ext.DomainReadService]: Failed to convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService': no matching editors or conversion strategy found com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181" at ffdc_20.01.24_10.03.15.0.log
+[1/24/20 10:03:16:086 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [agent] in application [RTCP]: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'agent' defined in ServletContext resource [/WEB-INF/agent-servlet.xml]: Unsatisfied dependency expressed through constructor parameter 4: Could not convert argument value of type [com.sun.proxy.$Proxy37] to required type [com.greenhat.server.vie.server.ext.DomainReadService]: Failed to convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1393)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1153)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1121)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1022)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6550)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:464)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1119)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startModule(WebContainer.java:924)
+	at com.ibm.ws.app.manager.module.internal.ModuleHandlerBase.deployModule(ModuleHandlerBase.java:99)
+	at com.ibm.ws.app.manager.module.internal.DeployedModuleInfoImpl.installModule(DeployedModuleInfoImpl.java:49)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployModules(DeployedAppInfoBase.java:419)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:405)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:65)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1258)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:873)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:811)
+
+[1/24/20 10:03:16:090 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               E SRVE0276E: Error while initializing Servlet [agent]: javax.servlet.ServletException: SRVE0207E: Uncaught initialization exception created by servlet
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:366)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1393)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1153)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1121)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1022)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6550)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:464)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1119)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startModule(WebContainer.java:924)
+	at com.ibm.ws.app.manager.module.internal.ModuleHandlerBase.deployModule(ModuleHandlerBase.java:99)
+	at com.ibm.ws.app.manager.module.internal.DeployedModuleInfoImpl.installModule(DeployedModuleInfoImpl.java:49)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployModules(DeployedAppInfoBase.java:419)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:405)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:65)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1258)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:873)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:811)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'agent' defined in ServletContext resource [/WEB-INF/agent-servlet.xml]: Unsatisfied dependency expressed through constructor parameter 4: Could not convert argument value of type [com.sun.proxy.$Proxy37] to required type [com.greenhat.server.vie.server.ext.DomainReadService]: Failed to convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.sun.proxy.$Proxy37 implementing com.greenhat.server.container.server.logging.ActivityLogService,com.greenhat.server.container.server.logging.LogCSVExporter,org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.core.DecoratingProxy' to required type 'com.greenhat.server.vie.server.ext.DomainReadService': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	... 20 more
+
+[1/24/20 10:03:16:113 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [dispatch]: Initialization successful.
+[1/24/20 10:03:16:113 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'auth'
+[1/24/20 10:03:16:114 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'auth': initialization started
+[1/24/20 10:03:16:118 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'auth-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:16:118 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/auth-servlet.xml]
+[1/24/20 10:03:16:173 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [container.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:16:682 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discovery] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:683 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discovery.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:683 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discovery/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:684 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-in] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:684 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-in.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:684 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-in/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:685 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-out] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:685 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-out.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:685 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/session-sign-out/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:685 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/token] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:686 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/token.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:686 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/token/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:686 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/introspection] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:687 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/introspection.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:687 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/introspection/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:687 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/persistent-token] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:687 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/persistent-token.*] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:688 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/persistent-token/] onto handler 'vieAuthorizationServlet'
+[1/24/20 10:03:16:693 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'auth': initialization completed in 578 ms
+[1/24/20 10:03:16:693 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [auth]: Initialization successful.
+[1/24/20 10:03:16:705 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [calculator-ws]: Initialization successful.
+[1/24/20 10:03:16:706 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'phonebook'
+[1/24/20 10:03:16:706 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'phonebook': initialization started
+[1/24/20 10:03:16:708 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'phonebook-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:16:709 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/phonebook-servlet.xml]
+[1/24/20 10:03:16:881 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/libs/angular.min.js] onto handler 'rest'
+[1/24/20 10:03:16:882 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/libs/jquery.min.js] onto handler 'rest'
+[1/24/20 10:03:16:882 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/libs/bootstrap.min.js] onto handler 'rest'
+[1/24/20 10:03:16:883 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/fonts/glyphicons-halflings-regular.ttf] onto handler 'rest'
+[1/24/20 10:03:16:883 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/fonts/glyphicons-halflings-regular.woff] onto handler 'rest'
+[1/24/20 10:03:16:883 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/libs/bootstrap.min.css] onto handler 'rest'
+[1/24/20 10:03:16:884 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/phonebook.wadl] onto handler 'rest'
+[1/24/20 10:03:16:884 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/phonebook.wadl] onto handler 'rest'
+[1/24/20 10:03:16:884 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/phonebook.raml] onto handler 'rest'
+[1/24/20 10:03:16:885 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/phonebook.raml] onto handler 'rest'
+[1/24/20 10:03:16:885 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/phonebook-openapi3.0.json] onto handler 'rest'
+[1/24/20 10:03:16:885 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/phonebook-openapi3.0.json] onto handler 'rest'
+[1/24/20 10:03:16:886 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/index.html] onto handler 'rest'
+[1/24/20 10:03:16:887 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Root mapping to handler 'rest'
+[1/24/20 10:03:16:887 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/phonebook.js] onto handler 'rest'
+[1/24/20 10:03:16:888 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/swagger] onto handler 'rest'
+[1/24/20 10:03:16:888 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/swagger.*] onto handler 'rest'
+[1/24/20 10:03:16:888 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/swagger/] onto handler 'rest'
+[1/24/20 10:03:16:889 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/swagger.json] onto handler 'rest'
+[1/24/20 10:03:16:889 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api] onto handler 'rest'
+[1/24/20 10:03:16:890 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api.*] onto handler 'rest'
+[1/24/20 10:03:16:890 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/] onto handler 'rest'
+[1/24/20 10:03:16:891 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/{id}] onto handler 'rest'
+[1/24/20 10:03:16:891 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/{id}.*] onto handler 'rest'
+[1/24/20 10:03:16:891 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/api/{id}/] onto handler 'rest'
+[1/24/20 10:03:16:896 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'phonebook': initialization completed in 190 ms
+[1/24/20 10:03:16:897 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [phonebook]: Initialization successful.
+[1/24/20 10:03:16:921 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [performanceMonitor]: Initialization successful.
+[1/24/20 10:03:16:921 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'scenarios'
+[1/24/20 10:03:16:922 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'scenarios': initialization started
+[1/24/20 10:03:16:925 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'scenarios-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:16:925 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/scenarios-servlet.xml]
+[1/24/20 10:03:16:960 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'scenarios': initialization completed in 38 ms
+[1/24/20 10:03:16:960 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [scenarios]: Initialization successful.
+[1/24/20 10:03:16:961 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'tools'
+[1/24/20 10:03:16:961 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'tools': initialization started
+[1/24/20 10:03:16:964 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'tools-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:16:965 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/tools-servlet.xml]
+[1/24/20 10:03:17:018 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [container.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:17:025 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/**] onto handler 'toolsRestServiceController'
+[1/24/20 10:03:17:026 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/**.*] onto handler 'toolsRestServiceController'
+[1/24/20 10:03:17:026 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/**/] onto handler 'toolsRestServiceController'
+[1/24/20 10:03:17:028 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'tools': initialization completed in 67 ms
+[1/24/20 10:03:17:029 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [tools]: Initialization successful.
+[1/24/20 10:03:17:029 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'stubs'
+[1/24/20 10:03:17:029 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'stubs': initialization started
+[1/24/20 10:03:17:032 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'stubs-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:17:033 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/stubs-servlet.xml]
+[1/24/20 10:03:17:067 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'stubs': initialization completed in 38 ms
+[1/24/20 10:03:17:067 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [stubs]: Initialization successful.
+[1/24/20 10:03:17:071 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [login-ws]: Initialization successful.
+[1/24/20 10:03:17:071 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'proxy'
+[1/24/20 10:03:17:072 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'proxy': initialization started
+[1/24/20 10:03:17:074 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'proxy-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:17:075 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/proxy-servlet.xml]
+[1/24/20 10:03:17:792 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/register] onto handler 'proxy'
+[1/24/20 10:03:17:793 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/register.*] onto handler 'proxy'
+[1/24/20 10:03:17:793 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/register/] onto handler 'proxy'
+[1/24/20 10:03:17:793 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/config/{id}] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/config/{id}.*] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/config/{id}/] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/proxies] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/proxies.*] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/proxies/] onto handler 'proxy'
+[1/24/20 10:03:17:795 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rules/] onto handler 'proxy'
+[1/24/20 10:03:17:796 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rules/{ruleId}] onto handler 'proxy'
+[1/24/20 10:03:17:796 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rules/{ruleId}.*] onto handler 'proxy'
+[1/24/20 10:03:17:796 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rules/{ruleId}/] onto handler 'proxy'
+[1/24/20 10:03:17:796 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase] onto handler 'proxy'
+[1/24/20 10:03:17:797 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase.*] onto handler 'proxy'
+[1/24/20 10:03:17:797 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/] onto handler 'proxy'
+[1/24/20 10:03:17:797 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/heartbeat] onto handler 'proxy'
+[1/24/20 10:03:17:798 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/heartbeat.*] onto handler 'proxy'
+[1/24/20 10:03:17:798 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/heartbeat/] onto handler 'proxy'
+[1/24/20 10:03:17:798 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/{id}] onto handler 'proxy'
+[1/24/20 10:03:17:798 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/{id}.*] onto handler 'proxy'
+[1/24/20 10:03:17:799 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/rulebase/{id}/] onto handler 'proxy'
+[1/24/20 10:03:17:799 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/observation/{id}] onto handler 'proxy'
+[1/24/20 10:03:17:799 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/observation/{id}.*] onto handler 'proxy'
+[1/24/20 10:03:17:799 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/observation/{id}/] onto handler 'proxy'
+[1/24/20 10:03:17:802 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'proxy': initialization completed in 730 ms
+[1/24/20 10:03:17:802 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [proxy]: Initialization successful.
+[1/24/20 10:03:17:803 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [examples]: Initialization successful.
+[1/24/20 10:03:17:806 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [echo-ws]: Initialization successful.
+[1/24/20 10:03:17:807 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'discovery'
+[1/24/20 10:03:17:807 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'discovery': initialization started
+[1/24/20 10:03:17:809 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'discovery-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:17:809 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/discovery-servlet.xml]
+[1/24/20 10:03:17:855 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [container.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:17:864 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/detail] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:865 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/detail.*] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:865 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/detail/] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:866 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discover] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:866 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discover.*] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:867 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/discover/] onto handler 'rtcpDiscoveryServiceController'
+[1/24/20 10:03:17:871 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'discovery': initialization completed in 64 ms
+[1/24/20 10:03:17:871 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [discovery]: Initialization successful.
+[1/24/20 10:03:17:872 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'logging'
+[1/24/20 10:03:17:872 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'logging': initialization started
+[1/24/20 10:03:17:875 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'logging-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:17:876 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/logging-servlet.xml]
+[1/24/20 10:03:17:903 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Root mapping to handler 'loggingServlet'
+[1/24/20 10:03:17:907 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'logging': initialization completed in 35 ms
+[1/24/20 10:03:17:907 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [logging]: Initialization successful.
+[1/24/20 10:03:17:908 CAT] 0000002d com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Initializing Spring FrameworkServlet 'vocab'
+[1/24/20 10:03:17:908 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'vocab': initialization started
+[1/24/20 10:03:17:909 CAT] 0000002d springframework.web.context.support.XmlWebApplicationContext I Refreshing WebApplicationContext for namespace 'vocab-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 10:03:17:910 CAT] 0000002d rg.springframework.beans.factory.xml.XmlBeanDefinitionReader I Loading XML bean definitions from ServletContext resource [/WEB-INF/vocab-servlet.xml]
+[1/24/20 10:03:17:966 CAT] 0000002d framework.beans.factory.config.PropertyPlaceholderConfigurer I Properties resource not found: class path resource [container.server-local.properties] cannot be opened because it does not exist
+[1/24/20 10:03:18:087 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Root mapping to handler 'vocab'
+[1/24/20 10:03:18:088 CAT] 0000002d k.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping I Mapped URL path [/{fileName:.+}] onto handler 'vocab'
+[1/24/20 10:03:18:091 CAT] 0000002d org.springframework.web.servlet.DispatcherServlet            I FrameworkServlet 'vocab': initialization completed in 183 ms
+[1/24/20 10:03:18:092 CAT] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [RTCP] [/RTCP] [vocab]: Initialization successful.
+[1/24/20 10:03:18:112 CAT] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application RTCP started in 32.798 seconds.
+[1/24/20 10:03:18:140 CAT] 0000005a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\IntegrationTester\Apps\RTCP\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[1/24/20 10:15:00:072 CAT] 00000040 openjpa.Runtime                                              I Starting OpenJPA 2.4.3
+[1/24/20 10:15:00:072 CAT] 00000040 openjpa.jdbc.JDBC                                            I Using dictionary class "org.apache.openjpa.jdbc.sql.H2Dictionary" (H2 1.4.197 (2018-03-18) ,H2 JDBC Driver 1.4.197 (2018-03-18)).
+[1/24/20 10:15:00:072 CAT] 00000040 openjpa.jdbc.JDBC                                            I Connected to H2 version 1.1 using JDBC driver H2 JDBC Driver version 1.4.197 (2018-03-18). 
+[1/24/20 10:15:00:450 CAT] 00000040 openjpa.Runtime                                              I The Entity "com.greenhat.server.container.server.userprofile.orm.UserProfile" was enhanced at level "2", but the current level of enhancement is "1,674,154". 
+[1/24/20 10:15:00:450 CAT] 00000040 openjpa.Runtime                                              I A down level Entity was detected and logged. Please enable RUNTIME trace to see all down level Entities.
+[1/24/20 15:44:17:364 CAT] 00000017 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Friday, January 24, 2020 at 3:44 PM. The server defaultServer is shutting down.
+[1/24/20 15:44:17:374 CAT] 00000b12 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[1/24/20 15:44:17:384 CAT] 00000b13 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 5443.
+[1/24/20 15:44:17:384 CAT] 00000b13 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7819.
+[1/24/20 15:44:17:384 CAT] 00000b13 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:7819/RTCP/
+[1/24/20 15:44:17:384 CAT] 00000b13 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:7819/
+[1/24/20 15:44:17:384 CAT] 00000b12 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[1/24/20 15:44:17:399 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'container'
+[1/24/20 15:44:17:399 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'container-servlet': startup date [Fri Jan 24 10:03:15 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:403 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [container]: Destroy successful.
+[1/24/20 15:44:17:403 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'scenarios'
+[1/24/20 15:44:17:403 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'scenarios-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:407 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [scenarios]: Destroy successful.
+[1/24/20 15:44:17:407 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'tools'
+[1/24/20 15:44:17:407 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'tools-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:424 CAT] 00000af4 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ROOT has stopped successfully.
+[1/24/20 15:44:17:424 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [tools]: Destroy successful.
+[1/24/20 15:44:17:424 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'stubs'
+[1/24/20 15:44:17:424 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'stubs-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:424 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [stubs]: Destroy successful.
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'proxy'
+[1/24/20 15:44:17:429 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'proxy-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [proxy]: Destroy successful.
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'logging'
+[1/24/20 15:44:17:429 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'logging-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [logging]: Destroy successful.
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'vocab'
+[1/24/20 15:44:17:429 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'vocab-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [vocab]: Destroy successful.
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'rest'
+[1/24/20 15:44:17:429 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'rest-servlet': startup date [Fri Jan 24 10:03:15 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:429 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [rest]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'auth'
+[1/24/20 15:44:17:434 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'auth-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [auth]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [dispatch]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [performanceMonitor]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [calculator-ws]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'phonebook'
+[1/24/20 15:44:17:434 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'phonebook-servlet': startup date [Fri Jan 24 10:03:16 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [phonebook]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [echo-ws]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [login-ws]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [examples]: Destroy successful.
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Destroying Spring FrameworkServlet 'discovery'
+[1/24/20 15:44:17:434 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing WebApplicationContext for namespace 'discovery-servlet': startup date [Fri Jan 24 10:03:17 CAT 2020]; parent: Root WebApplicationContext
+[1/24/20 15:44:17:434 CAT] 00000b05 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [RTCP] [/RTCP] [discovery]: Destroy successful.
+[1/24/20 15:44:17:439 CAT] 00000b05 com.ibm.ws.webcontainer.webapp                               I SRVE0292I: Servlet Message - [RTCP]:.Closing Spring root WebApplicationContext
+[1/24/20 15:44:17:439 CAT] 00000b05 springframework.web.context.support.XmlWebApplicationContext I Closing Root WebApplicationContext: startup date [Fri Jan 24 10:03:00 CAT 2020]; root of context hierarchy
+[1/24/20 15:44:17:439 CAT] 00000b05 rg.springframework.context.support.DefaultLifecycleProcessor I Stopping beans in phase 2147483647
+[1/24/20 15:44:17:454 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Key_Expiry_Scheduler_$_NON_CLUSTERED paused.
+[1/24/20 15:44:17:454 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Purge_Proxy_Rules_Scheduler_$_NON_CLUSTERED paused.
+[1/24/20 15:44:17:467 CAT] 00000b05 pringframework.scheduling.concurrent.ThreadPoolTaskScheduler I Shutting down ExecutorService 'taskScheduler'
+[1/24/20 15:44:17:468 CAT] 00000b05 org.springframework.scheduling.quartz.SchedulerFactoryBean   I Shutting down Quartz Scheduler
+[1/24/20 15:44:17:468 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Purge_Proxy_Rules_Scheduler_$_NON_CLUSTERED shutting down.
+[1/24/20 15:44:17:468 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Purge_Proxy_Rules_Scheduler_$_NON_CLUSTERED paused.
+[1/24/20 15:44:17:468 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Purge_Proxy_Rules_Scheduler_$_NON_CLUSTERED shutdown complete.
+[1/24/20 15:44:17:484 CAT] 0000004a com.ibm.micro.clients                                        I FMBT1757I [RTCPBroker] Client 'PPSSSubscriber' disconnected.
+[1/24/20 15:44:17:484 CAT] 0000004a com.ibm.micro.clients                                        I FMBT1757I [RTCPBroker] Client 'PPSSPublisher' disconnected.
+[1/24/20 15:44:17:484 CAT] 00000b05 com.ibm.micro.entrypoint                                     I FMBE1203I [RTCPBroker] Shutdown requested.
+[1/24/20 15:44:17:614 CAT] 00000b05 com.ibm.micro.entrypoint                                     I FMBE1204I [RTCPBroker] --------------MicroBroker Shutdown--------------
+[1/24/20 15:44:17:614 CAT] 00000b05 org.springframework.scheduling.quartz.SchedulerFactoryBean   I Shutting down Quartz Scheduler
+[1/24/20 15:44:17:614 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Key_Expiry_Scheduler_$_NON_CLUSTERED shutting down.
+[1/24/20 15:44:17:614 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Key_Expiry_Scheduler_$_NON_CLUSTERED paused.
+[1/24/20 15:44:17:614 CAT] 00000b05 org.quartz.core.QuartzScheduler                              I Scheduler Key_Expiry_Scheduler_$_NON_CLUSTERED shutdown complete.
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'agent'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'vie'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'stub'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'scenario'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'proxies'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 15:44:17:645 CAT] 00000b05 ringframework.orm.jpa.LocalContainerEntityManagerFactoryBean I Closing JPA EntityManagerFactory for persistence unit 'container'
+[1/24/20 15:44:17:645 CAT] 00000b05 com.zaxxer.hikari.pool.HikariPool                            I HikariPool-1 - Close initiated...
+[1/24/20 15:44:17:654 CAT] 00000b05 com.zaxxer.hikari.pool.HikariPool                            I HikariPool-1 - Closed.
+[1/24/20 15:44:17:674 CAT] 00000b05 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application RTCP has stopped successfully.
+[1/24/20 15:44:18:534 CAT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 5 hours, 41 minutes, 35.69 seconds.

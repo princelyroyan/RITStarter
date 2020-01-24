@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>testData</title>
+  <entry>
+    <title>Test Data</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff3</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.createdatadriventest" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Use data from a spreadsheet to create messages</summary>
+    <media:thumbnail url="images/testdata.png" />
+  </entry>
+  <entry>
+    <title>Test Data</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7ff1</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.stublookuptestdata" />
+        <perspective id="design.perspective" />
+      </config>
+    </content>
+    <summary>Look up data from a spreadsheet for a stub's reply</summary>
+    <rit:condition>project.resources.getByType('stub_resource').length &gt; 0</rit:condition>
+    <media:thumbnail url="images/testdata.png" />
+  </entry>
+</feed>
+

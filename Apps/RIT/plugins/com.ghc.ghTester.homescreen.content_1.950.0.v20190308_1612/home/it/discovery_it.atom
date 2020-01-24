@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>discovery</title>
+  <entry>
+    <title>Rileva</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fed</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.configure.sap.abap.transport" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>Rileva le risorse nei server SAP personali</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.sap.jco'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>Rileva</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fec</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ibm.rational.rit.was.interactiveguide.discover" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>Rilevare le risorse nel WebSphere Application Server personale</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.was.ghtester'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>Rileva</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7feb</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ibm.rational.rit.wmb.interactiveguide.discover" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>Rileva le risorse nel nodo di integrazione IBM Integration Bus personale</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.mq'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>Rileva</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fea</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.tibco.coverage" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>Rileva le risorse nel server Business Works personale</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.ae4'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>Rileva</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe9</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.discover.wmq" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>Rileva le query utilizzate dalla propria applicazione</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.mq'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+</feed>
+

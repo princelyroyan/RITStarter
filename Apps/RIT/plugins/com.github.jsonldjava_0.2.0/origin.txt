@@ -1,0 +1,6 @@
+json-ld version is 0.2
+source downloaded from https://github.com/jsonld-java/jsonld-java/archive/v0.2.zip
+unzipped into Integrations/com.ibm.greenhat.jsonld
+build using maven 3.1.1
+See wiki page: https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W22fb15849876_438a_8982_b27e1737fea1/page/Information%20on%203rd%20party%20packages
+

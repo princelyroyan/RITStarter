@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Castor XML Mapping
+Bundle-SymbolicName: org.castor
+Bundle-Version: 1.3.3002
+Bundle-ClassPath: castor-1.3.3-core.jar,
+ castor-1.3.3-xml.jar,
+ castor-1.3.3.jar
+Bundle-Vendor: castor.org
+Import-Package: org.apache.commons.lang,
+ org.apache.commons.logging;version="[1.1.1,2.0.0)",
+ org.apache.xml.serialize;resolution:=optional
+Export-Package: org.exolab.castor,
+ org.exolab.castor.xml,
+ org.exolab.castor.mapping

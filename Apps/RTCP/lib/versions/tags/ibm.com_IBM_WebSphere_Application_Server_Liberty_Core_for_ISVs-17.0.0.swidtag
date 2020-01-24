@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoftwareIdentity name="IBM WebSphere Application Server Liberty Core for ISVs" tagId="ibm.com-055f049e2f884d1786f0a1cb6821ba1c-17.0.0" version="17.0.0" versionScheme="multipartnumeric" xml:lang="en" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19770/-2/2015-current/schema.xsd schema.xsd">
+    <Meta persistentId="055f049e2f884d1786f0a1cb6821ba1c"/>
+    <Meta generator="4-1-20170201"/>
+    <Entity name="IBM" regid="ibm.com" role="licensor tagCreator softwareCreator"/>
+</SoftwareIdentity>

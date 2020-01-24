@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JOpt Simple
+Bundle-SymbolicName: com.ibm.rational.rit.jopt-simple
+Bundle-ClassPath: lib/jopt-simple-4.6.jar
+Bundle-Version: 4.6
+Export-Package: joptsimple;version="4.6.0",joptsimple.internal;uses:=jop
+ tsimple;version="4.6.0",joptsimple.util;uses:=joptsimple;version="4.6.0
+ "

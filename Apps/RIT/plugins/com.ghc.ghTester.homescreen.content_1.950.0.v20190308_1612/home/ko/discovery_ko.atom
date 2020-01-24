@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rit="http://ibm.co/rit/home/feeds" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>발견</title>
+  <entry>
+    <title>발견</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fed</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.configure.sap.abap.transport" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>내 SAP 서버에서 자원 검색</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.sap.jco'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>발견</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fec</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ibm.rational.rit.was.interactiveguide.discover" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>내 WebSphere Application Server에서 자원 검색</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.was.ghtester'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>발견</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7feb</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ibm.rational.rit.wmb.interactiveguide.discover" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>내 IBM Integration Bus 통합 노드에서 자원 검색</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.mq'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>발견</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fea</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.tibco.coverage" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>내 Business Works 서버에서 자원 검색</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.ae4'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+  <entry>
+    <title>발견</title>
+    <category term="guide" scheme="http://ibm.co/rit/home/feeds/ritType" />
+    <category term="discover" scheme="http://ibm.co/rit/home/feeds/groupings/group" />
+    <author>
+      <name>IBM</name>
+    </author>
+    <id>tag:ibm.co,2015-01-21:4540cc60:14b0d191360:-7fe9</id>
+    <updated>2015-01-21T15:25:22Z</updated>
+    <content type="text/xml">
+      <config xmlns="">
+        <guide id="com.ghc.ghTester.interactiveguides.discover.wmq" />
+        <perspective id="architectureschool.perspective" />
+      </config>
+    </content>
+    <summary>내 애플리케이션에서 사용중인 큐 검색</summary>
+    <rit:condition>product.isFullEdition &amp;&amp; libManager.plugins['com.ghc.a3.mq'].isEnabled</rit:condition>
+    <media:thumbnail url="images/discover_record.png" />
+  </entry>
+</feed>
+

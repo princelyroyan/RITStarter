@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Jena
+Bundle-SymbolicName: org.apache.jena
+Bundle-Version: 2.7.4
+Bundle-ClassPath: jena-core-2.7.4.jar,
+ jena-iri-0.9.4.jar
+Export-Package: com.hp.hpl.jena,
+ com.hp.hpl.jena.rdf.model,
+ com.hp.hpl.jena.vocabulary,
+ com.hp.hpl.jena.shared
+Require-Bundle: slf4j.api,
+ org.apache.xerces

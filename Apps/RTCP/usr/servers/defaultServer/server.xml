@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+
+	<featureManager>
+		<feature>jsp-2.3</feature>
+		<feature>jndi-1.0</feature>
+		<feature>ssl-1.0</feature>
+	</featureManager>
+
+	<httpEndpoint id="defaultHttpEndpoint" httpPort="7819" httpsPort="5443" host="localhost" />
+	
+	<keyStore id="defaultKeyStore" password="passphrase" location="se_greenhat.jks"/>
+
+	<application location="RTCP.war" />
+	<application location="maven2.war" />
+	<application location="ROOT.war" context-root="/" />
+
+<!--
+#	The logging entry specifies which kinds of events are logged across
+#	different loggers and where those entries are logged.
+#
+#	traceFileName: Specifies the name of the RTCP log file. The location
+#	of this file is set in the setenv.bat (Windows) or setevnv.sh (Unix)
+#	file which is found in the bin directory of RTCP's installation directory.
+#
+#	traceSpecification: Specifies which logging levels are logged for
+#	named loggers. A logger level represents the severity of a logging
+#	event and can be one of the following values:
+#		off
+#		fatal
+#		severe
+#		warning
+#		audit
+#		info
+#		config
+#		detail
+#		fine
+#		finer
+#		finest
+#		all
+#	By specifying a log level, any log events that are below that
+#	level are not logged. For example, setting the level to severe will
+#	only log severe and fatal level events.
+#
+#	To change the level of logging in RTCP, set the value of the com.greenhat.*
+#	logger to the desired level. e.g.
+#		*=info:org.springframework.*=info:com.greenhat.*=severe
+#
+#	By default, all loggers are set to info.
+#	WARNING: setting fine logging levels for all loggers can cause severe
+#			performance issues.
+	-->
+	<logging traceFileName="RTCP.log" traceSpecification="*=info:org.springframework.*=info:com.greenhat.*=info" />
+
+	<webContainer deferServletLoad="false" />
+
+	<applicationMonitor dropinsEnabled="false" updateTrigger="disabled" />
+
+	<config updateTrigger="disabled" />
+
+	<jndiEntry jndiName="rtcpInstallDir" value="${wlp.install.dir}"/>
+</server>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JDom
+Bundle-SymbolicName: org.jdom
+Bundle-Version: 1.1.2
+Bundle-ClassPath: jdom-1.1.2.jar
+Bundle-Vendor: jdom.org
+Eclipse-RegisterBuddy: org.jaxen
+Export-Package: org.jdom,
+ org.jdom.adapters,
+ org.jdom.filter,
+ org.jdom.input,
+ org.jdom.output,
+ org.jdom.transform,
+ org.jdom.xpath
+Require-Bundle: org.jaxen;resolution:=optional
